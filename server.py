@@ -1,6 +1,7 @@
 from PyPDF2 import PdfReader
 import nltk
 from nltk import FreqDist
+import unicodedata
 
 class server():
 
@@ -17,6 +18,13 @@ class server():
             texto += pagina.extract_text() + "\n"
 
         return texto
+
+    def remover_acentos(texto):
+        return ''.join(
+            caractere
+            for caractere in unicodedata.normalize('NFD', texto)
+            if unicodedata.category(caractere) != 'Mn'
+        )
 
     def tokenizacao(caminho):
         tokens = nltk.word_tokenize(caminho, language='portuguese')
@@ -53,7 +61,11 @@ class server():
         "é", "-se", "-lhe", "d.", "''", "nada", "tão", "ainda", "só", "depois", "outro",
         "porque", "por que", "estar", "estava", "estando", "disse", "tudo", "eram", "foi", "foram", "todos",
         "ter", "tido", "tinha", "tinham", "outra", "um", "uma", "dois", "duas", "pode", "podia", "mas", "mais",
-        "menos", "coisa"
+        "menos", "coisa", "ia", "fora", "agora", "diz", "disse", "dizia", "seu", "seus", "logo",
+        "assim", "outros", "outras", "toda", "fosse", "muito", "-lo", "ficou", "ver", "ate", "ai", "gozo", "vao", "vai",
+        "4º", "pina", "catao", "-nos", "-los", "ve", "mucama", "mudou", "dada", "vos", "gil", "pediam", "haver",
+        "alumiou", "quis", "tamanha", "vice-rei", "-as", "-os", "pos", "1", "2", "3", "4", "5", "d", "tanto", "sentiu",
+        "ora", "nele", "deste", "ha", "-lhes", "tantos", "quanto", "ja", "sao", "si", "dar-lhes", "tomasse"
         ]
 
         texto_filtrado = []
@@ -64,7 +76,20 @@ class server():
 
         return texto_filtrado
 
-    def contagem_frequencia(texto):
-        frequencia = FreqDist(texto)
+    def contagem_filtragem_frequencia(texto):
+        frequencia = dict(FreqDist(texto))
 
-        print(frequencia.most_common(20))
+        f_min = 2
+        f_max = 40
+
+        vocabulario = {}
+
+        for palavra, quantidade in frequencia.items():
+            if f_min <= quantidade <= f_max:
+                vocabulario[palavra] = quantidade
+
+        print(len(vocabulario))
+
+        return vocabulario, frequencia
+
+        
