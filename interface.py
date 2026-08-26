@@ -2,6 +2,9 @@ import customtkinter as ctk
 from PIL import Image
 import os
 
+# processar_palpite, solicitar_dica e solicitar_desistencia ALTERAR ESSES METODOS DEPOIS DE FEITO O SERVIDOR PARA TESTAR, 
+# ATUALMENTE APENAS PROCESSA ALGO FICTICIO, GERA DICAS FAKES E AINDA NAO MOSTRA A PALAVRA CERTA E AS 500 PROXIMAS...
+
 class ContextoAlienistaApp(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -93,7 +96,171 @@ class ContextoAlienistaApp(ctk.CTk):
         btn_sair.pack(padx=40, pady=(10, 35))
 
     def acao_jogar(self):
+        # Transição da tela inicial para a tela da partida
         self.carregar_tela_jogo()
+
+    def carregar_tela_jogo(self):
+        # 1. Limpa a tela inicial
+        for widget in self.main_frame.winfo_children():
+            widget.destroy()
+
+        # Estrutura de dados local para armazenar as tentativas
+        self.historico_tentativas = []
+
+        # --- Top Bar (Cabeçalho com Botão Voltar) ---
+        top_bar = ctk.CTkFrame(self.main_frame, fg_color="transparent")
+        top_bar.pack(fill="x", padx=40, pady=(20, 10))
+
+        btn_voltar = ctk.CTkButton(
+            top_bar,
+            text="← Voltar ao Menu",
+            width=140,
+            height=35,
+            font=ctk.CTkFont(family="Georgia", size=13),
+            corner_radius=8,
+            fg_color="#2B2B2B",
+            hover_color="#3D3D3D",
+            command=self.carregar_tela_inicial
+        )
+        btn_voltar.pack(side="left")
+
+        lbl_titulo_jogo = ctk.CTkLabel(
+            top_bar,
+            text="O Contexto do Alienista",
+            text_color="#F0E6D2",
+            font=ctk.CTkFont(family="Georgia", size=24, weight="bold")
+        )
+        lbl_titulo_jogo.pack(side="right")
+
+        # --- Container Central do Jogo ---
+        game_container = ctk.CTkFrame(
+            self.main_frame,
+            corner_radius=15,
+            fg_color="#1E1E1E",
+            border_width=1,
+            border_color="#3A3A3A"
+        )
+        game_container.pack(fill="both", expand=True, padx=40, pady=(0, 20))
+
+        # --- Área Superior: Entrada de Palavra ---
+        input_frame = ctk.CTkFrame(game_container, fg_color="transparent")
+        input_frame.pack(fill="x", padx=30, pady=(20, 10))
+
+        self.entry_palavra = ctk.CTkEntry(
+            input_frame,
+            placeholder_text="Digite seu palpite...",
+            height=45,
+            font=ctk.CTkFont(family="Georgia", size=15),
+            border_color="#3A3A3A",
+            fg_color="#141414"
+        )
+        self.entry_palavra.pack(side="left", fill="x", expand=True, padx=(0, 10))
+        self.entry_palavra.bind("<Return>", lambda event: self.processar_palpite())
+
+        btn_enviar = ctk.CTkButton(
+            input_frame,
+            text="Enviar",
+            width=120,
+            height=45,
+            font=ctk.CTkFont(family="Georgia", size=15, weight="bold"),
+            fg_color="#2B2B2B",
+            hover_color="#3D3D3D",
+            command=self.processar_palpite
+        )
+        btn_enviar.pack(side="right")
+
+        # --- Cabeçalho da Tabela de Tentativas ---
+        header_table = ctk.CTkFrame(game_container, fg_color="#141414", height=35, corner_radius=6)
+        header_table.pack(fill="x", padx=30, pady=(10, 5))
+
+        lbl_h_pos = ctk.CTkLabel(header_table, text="Posição", font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), text_color="#A0A0A0", width=80)
+        lbl_h_pos.pack(side="left", padx=10)
+
+        lbl_h_palavra = ctk.CTkLabel(header_table, text="Palpite", font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), text_color="#A0A0A0")
+        lbl_h_palavra.pack(side="left", padx=20)
+
+        lbl_h_sim = ctk.CTkLabel(header_table, text="Proximidade", font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), text_color="#A0A0A0", width=120)
+        lbl_h_sim.pack(side="right", padx=10)
+
+        # --- Lista de Tentativas Anteriores com Rolagem ---
+        self.scroll_historico = ctk.CTkScrollableFrame(game_container, fg_color="transparent")
+        self.scroll_historico.pack(fill="both", expand=True, padx=30, pady=(0, 10))
+
+        # --- Barra Inferior: Ações de Apoio ---
+        bottom_bar = ctk.CTkFrame(game_container, fg_color="transparent")
+        bottom_bar.pack(fill="x", padx=30, pady=(10, 20))
+
+        btn_dica = ctk.CTkButton(
+            bottom_bar,
+            text="💡 Pedir Dica",
+            height=40,
+            font=ctk.CTkFont(family="Georgia", size=14),
+            fg_color="#2B2B2B",
+            hover_color="#3D3D3D",
+            command=self.solicitar_dica
+        )
+        btn_dica.pack(side="left")
+
+        btn_desistir = ctk.CTkButton(
+            bottom_bar,
+            text="🏴 Desistir",
+            height=40,
+            font=ctk.CTkFont(family="Georgia", size=14),
+            fg_color="#4A1C1C",
+            hover_color="#5E2323",
+            command=self.solicitar_desistencia
+        )
+        btn_desistir.pack(side="right")
+
+    def processar_palpite(self):
+        palpite = self.entry_palavra.get().strip().lower()
+        if not palpite:
+            return
+
+        self.entry_palavra.delete(0, "end")
+
+        # Mock provisório enquanto o RPC/servidor não está conectado:
+        # Gera uma posição fictícia para testar o front-end
+        import random
+        posicao_ficticia = random.randint(2, 500)
+        
+        # Adiciona e reordena as tentativas pela posição mais próxima (menor número primeiro)
+        self.historico_tentativas.append({"palavra": palpite, "posicao": posicao_ficticia})
+        self.historico_tentativas.sort(key=lambda item: item["posicao"])
+        
+        self.atualizar_tabela_historico()
+
+    def atualizar_tabela_historico(self):
+        for widget in self.scroll_historico.winfo_children():
+            widget.destroy()
+
+        for item in self.historico_tentativas:
+            row = ctk.CTkFrame(self.scroll_historico, fg_color="#262626", height=40, corner_radius=6)
+            row.pack(fill="x", pady=4)
+
+            # Define cor de destaque conforme a proximidade
+            cor_pos = "#52BE80" if item["posicao"] <= 50 else ("#F4D03F" if item["posicao"] <= 200 else "#E74C3C")
+
+            lbl_pos = ctk.CTkLabel(row, text=f"#{item['posicao']}", font=ctk.CTkFont(family="Georgia", size=14, weight="bold"), text_color=cor_pos, width=80)
+            lbl_pos.pack(side="left", padx=10)
+
+            lbl_palavra = ctk.CTkLabel(row, text=item["palavra"], font=ctk.CTkFont(family="Georgia", size=14), text_color="#FFFFFF")
+            lbl_palavra.pack(side="left", padx=20)
+
+            barra_progresso = ctk.CTkProgressBar(row, width=120, height=10)
+            # Normalização fictícia de proximidade para visualização
+            progresso = max(0.05, 1.0 - (item["posicao"] / 500.0))
+            barra_progresso.set(progresso)
+            barra_progresso.pack(side="right", padx=10)
+
+    def solicitar_dica(self):
+        # Simulação temporária de dica
+        self.historico_tentativas.append({"palavra": "dica_simulada", "posicao": 42})
+        self.historico_tentativas.sort(key=lambda item: item["posicao"])
+        self.atualizar_tabela_historico()
+
+    def solicitar_desistencia(self):
+        print("Desistência solicitada: revelar palavra secreta e top 500 mais próximas.")
 
     def acao_ajuda(self):
         JanelaAjuda(self)
