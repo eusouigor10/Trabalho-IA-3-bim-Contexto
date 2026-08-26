@@ -33,7 +33,7 @@ class ContextoAlienistaApp(ctk.CTk):
 
         # 1. Caminho dinâmico para a pasta assets
         caminho_base = os.path.dirname(os.path.abspath(__file__))
-        caminho_imagem = os.path.join(caminho_base, "assets", "capa_alienista.png")
+        caminho_imagem = os.path.join(caminho_base, "assets", "capa_alienista_1080p.png")
 
         # 2. Carrega a imagem e adiciona como plano de fundo
         if os.path.exists(caminho_imagem):
