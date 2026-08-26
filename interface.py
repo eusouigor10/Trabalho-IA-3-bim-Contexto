@@ -1,15 +1,26 @@
 import customtkinter as ctk
 from PIL import Image
+import os
 
 class ContextoAlienistaApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
         self.title("O Contexto do Alienista")
-        self.geometry("800x600")
-        self.resizable(False, False)
+        
+        # 1. Define a resolução padrão ao restaurar/desmaximizar
+        self.geometry("1280x720")
+        
+        # 2. Permite redimensionar a janela
+        self.resizable(True, True)
+        
+        # 3. Define um tamanho mínimo para não quebrar o layout se o usuário encolher muito
+        self.minsize(900, 600)
 
-        # Configuração do container principal
+        # 4. Abre maximizado logo na inicialização
+        self.after(0, lambda: self.state("zoomed"))
+
+        # Container principal
         self.main_frame = ctk.CTkFrame(self)
         self.main_frame.pack(fill="both", expand=True)
 
@@ -20,11 +31,19 @@ class ContextoAlienistaApp(ctk.CTk):
         for widget in self.main_frame.winfo_children():
             widget.destroy()
 
-        # Opcional: Imagem de fundo (descomente e aponte para sua imagem)
-        # img = Image.open("capa_alienista.jpg")
-        # bg_image = ctk.CTkImage(light_image=img, dark_image=img, size=(800, 600))
-        # bg_label = ctk.CTkLabel(self.main_frame, image=bg_image, text="")
-        # bg_label.place(x=0, y=0, relwidth=1, relheight=1)
+        # 1. Caminho dinâmico para a pasta assets
+        caminho_base = os.path.dirname(os.path.abspath(__file__))
+        caminho_imagem = os.path.join(caminho_base, "assets", "capa_alienista.png")
+
+        # 2. Carrega a imagem e adiciona como plano de fundo
+        if os.path.exists(caminho_imagem):
+            img_pil = Image.open(caminho_imagem)
+            
+            # O tamanho (size) aqui pode ser a resolução inicial da tela
+            self.bg_image = ctk.CTkImage(light_image=img_pil, dark_image=img_pil, size=(1920, 1080))
+            
+            bg_label = ctk.CTkLabel(self.main_frame, image=self.bg_image, text="")
+            bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 
         # Painel central para os botões (garante contraste com o fundo)
         menu_card = ctk.CTkFrame(self.main_frame, corner_radius=15, fg_color=("#E5DCC3", "#1A1A1A"))
