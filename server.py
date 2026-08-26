@@ -5,7 +5,7 @@ def fazer_dowloads(): # executar somente na primeira vez
     nltk.download('punkt')
     nltk.download('punkt_tab')
 
-def ler_livro(caminho):
+def ler_pdf(caminho):
     leitor = PdfReader(caminho)
 
     texto = ""
@@ -15,14 +15,46 @@ def ler_livro(caminho):
 
     return texto
 
-texto = ler_livro("O Alienista.pdf")
+def tokenizacao(caminho):
+    tokens = nltk.word_tokenize(caminho, language='portuguese')
+    tokens = [token.lower() for token in tokens]
 
-# tokenização
-tokens = nltk.word_tokenize(texto, language='portuguese')
-tokens = [token.lower() for token in tokens]
+    return tokens
 
-def remocao_stopwords(tokens):
-    lista_stopwords = []
-    for token in tokens:
+def remocao_stopwords(texto):
+    lista_stopwords = [
+        "a", "à", "ao", "aos", "as", "às",
+    "até", "com", "como",
+    "da", "das", "de", "dela", "dele", "do", "dos",
+    "e", "ela", "elas", "ele", "eles", "em", "entre",
+    "era", "essa", "essas", "esse", "esses",
+    "esta", "estas", "este", "estes",
+    "eu",
+    "foi", "foram",
+    "há",
+    "isso", "isto",
+    "já",
+    "lhe", "lhes",
+    "mais", "mas", "me", "mesmo",
+    "na", "nas", "não", "nem", "no", "nos", "nós",
+    "o", "os", "ou",
+    "para", "pela", "pelas", "pelo", "pelos", "por",
+    "qual", "quando", "que", "quem",
+    "se", "sem", "ser", "seu", "sua",
+    "também", "te", "tem", "têm",
+    "um", "uma", "uns", "umas",
+    ".", ",", ";", ":", "!", "?", 
+    "(", ")", "[", "]", "{", "}",
+    "\"", "'", "“", "”", "‘", "’",
+    "-", "–", "—", "...",
+    ]
+
+    texto_filtrado = []
+
+    for token in texto:
+        if token not in lista_stopwords:
+            texto_filtrado.append(token)
+
+    return texto_filtrado
 
 
