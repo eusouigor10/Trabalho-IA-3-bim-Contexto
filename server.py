@@ -2,6 +2,9 @@ from PyPDF2 import PdfReader
 import nltk
 from nltk import FreqDist
 import unicodedata
+from safetensors.numpy import load_file
+import random
+import math
 
 class server():
 
@@ -65,7 +68,8 @@ class server():
         "assim", "outros", "outras", "toda", "fosse", "muito", "-lo", "ficou", "ver", "ate", "ai", "gozo", "vao", "vai",
         "4º", "pina", "catao", "-nos", "-los", "ve", "mucama", "mudou", "dada", "vos", "gil", "pediam", "haver",
         "alumiou", "quis", "tamanha", "vice-rei", "-as", "-os", "pos", "1", "2", "3", "4", "5", "d", "tanto", "sentiu",
-        "ora", "nele", "deste", "ha", "-lhes", "tantos", "quanto", "ja", "sao", "si", "dar-lhes", "tomasse"
+        "ora", "nele", "deste", "ha", "-lhes", "tantos", "quanto", "ja", "sao", "si", "dar-lhes", "tomasse",
+        "nosso", "nossos", "nossa", "nossas", "orates", "-o"
         ]
 
         texto_filtrado = []
@@ -88,8 +92,59 @@ class server():
             if f_min <= quantidade <= f_max:
                 vocabulario[palavra] = quantidade
 
-        print(len(vocabulario))
+        return vocabulario
 
-        return vocabulario, frequencia
+    def carregar_embedding():
 
-        
+        dados = load_file("embedding/embeddings.safetensors")
+
+        vetores = dados["embeddings"]
+
+        with open("embedding/vocab.txt", "r", encoding="utf-8") as arquivo:
+            palavras = [linha.strip() for linha in arquivo]
+
+        return palavras, vetores
+
+    def criar_embeddings(vocabulario):
+
+        palavras, vetores = server.carregar_embedding()
+
+        indice = {}
+
+        for i, palavra in enumerate(palavras):
+            indice[palavra] = i
+
+        embeddings = {}
+
+        for palavra in vocabulario:
+            if palavra in indice:
+                embeddings[palavra] = vetores[indice[palavra]]
+
+        return embeddings
+
+    def sorteio_palavra(vocabulario):
+        palavra = random.choice(list(vocabulario.keys()))
+        return palavra
+
+    def distancia_euclidiana(v1, v2):
+        soma = 0
+
+        for i in range(len(v1)):
+            soma += (v1[i] - v2[i]) ** 2
+
+        return math.sqrt(soma)
+
+    def calculo_distancias(palavra_sorteada, embeddings):
+        resultados = {}
+
+        v_alvo = embeddings[palavra_sorteada]
+
+        for palavra in embeddings:
+            if palavra != palavra_sorteada:
+                v_palavra = embeddings[palavra]
+                d = server.distancia_euclidiana(v_alvo, v_palavra)
+                resultados[palavra] = d
+
+        return resultados
+
+    
