@@ -17,7 +17,7 @@ class server():
 
         texto = ""
 
-        for pagina in leitor.pages[4:]:
+        for pagina in leitor.pages[5:]:
             texto += pagina.extract_text() + "\n"
 
         return texto
@@ -69,7 +69,8 @@ class server():
         "4º", "pina", "catao", "-nos", "-los", "ve", "mucama", "mudou", "dada", "vos", "gil", "pediam", "haver",
         "alumiou", "quis", "tamanha", "vice-rei", "-as", "-os", "pos", "1", "2", "3", "4", "5", "d", "tanto", "sentiu",
         "ora", "nele", "deste", "ha", "-lhes", "tantos", "quanto", "ja", "sao", "si", "dar-lhes", "tomasse",
-        "nosso", "nossos", "nossa", "nossas", "orates", "-o"
+        "nosso", "nossos", "nossa", "nossas", "orates", "-o", "aquela", "pois", "portanto", "por que", "porque",
+        "caucus", "propria", "proprio"
         ]
 
         texto_filtrado = []
