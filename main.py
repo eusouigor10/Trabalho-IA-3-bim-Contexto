@@ -2,7 +2,7 @@ from server import *
 
 # server.fazer_dowloads()
 
-texto = server.ler_pdf("O Alienista.pdf")
+texto = server.ler_pdf("alice.pdf")
 
 texto = server.remover_acentos(texto)
 
@@ -18,5 +18,7 @@ palavra_sorteada = server.sorteio_palavra(vocabulario)
 
 distancias = server.calculo_distancias(palavra_sorteada, embeddings)
 
+ranking = sorted(distancias.items(), key=lambda x: x[1])
+
 print(palavra_sorteada)
-print(distancias)
+print(ranking)
