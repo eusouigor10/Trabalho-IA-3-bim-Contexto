@@ -2,7 +2,7 @@ from server import *
 
 # server.fazer_dowloads()
 
-texto = server.ler_pdf("alice.pdf")
+texto = server.ler_pdf("vidas secas.pdf")
 
 texto = server.remover_acentos(texto)
 
