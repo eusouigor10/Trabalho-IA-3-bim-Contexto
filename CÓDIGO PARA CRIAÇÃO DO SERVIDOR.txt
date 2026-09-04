@@ -1,0 +1,54 @@
+CÓDIGO PARA CRIAÇÃO DO SERVIDOR
+
+cliente.py:
+import os
+import xmlrpc.client
+
+proxy = xmlrpc.client.ServerProxy("http://localhost:9876")
+
+def listar_livros():
+    livros = proxy.listar_livros()
+
+    for l in livros:
+        print('\n')
+        print(l)
+
+while True:
+    print("\n Biblioteca")
+    print("[1] Listar livros")
+    print("[2] Buscar livros por autor")
+    print("[3] Sair")
+
+    opcao = input('Opcao:')
+
+    if opcao == '1':
+        listar_livros()
+    else:
+        break
+
+    
+server.py:
+from xmlrpc.server import SimpleXMLRPCServer
+
+acervo = {
+    1:{
+        "titulo": "Sistemas Distribuidos",
+        "ano": 2007,
+        "edicao": 4,
+        "autor": "Coulouris"
+    }
+}
+
+def listar_livros():
+    lista = []
+    for livro in acervo.values():
+        lista.append({"titulo": livro["titulo"], "autor": livro["autor"]})
+
+    return lista
+
+server = SimpleXMLRPCServer(("localhost", 9876))
+print("Servidor iniciado")
+
+server.register_function(listar_livros, "listar_livros")
+
+server.serve_forever()
