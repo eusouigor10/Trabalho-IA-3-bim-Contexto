@@ -5,13 +5,16 @@ import unicodedata
 from safetensors.numpy import load_file
 import random
 import math
+import stanza
+#stanza.download("pt")
+pln = stanza.Pipeline("pt")
 
-class server():
+class Processamento():
 
     def fazer_dowloads(): # executar somente na primeira vez
         nltk.download('punkt')
         nltk.download('punkt_tab')
-
+        
     def ler_pdf(caminho):
         leitor = PdfReader(caminho)
 
@@ -22,18 +25,37 @@ class server():
 
         return texto
 
-    def remover_acentos(texto):
-        return ''.join(
-            caractere
-            for caractere in unicodedata.normalize('NFD', texto)
-            if unicodedata.category(caractere) != 'Mn'
-        )
+    def remover_acentos(tokens):
+        tokens_sem_acentos = []
+
+        for token in tokens:
+            token = unicodedata.normalize("NFD", token)
+            token = "".join(
+                caractere
+                for caractere in token
+                if unicodedata.category(caractere) != "Mn"
+            )
+
+            tokens_sem_acentos.append(token)
+
+        return tokens_sem_acentos
 
     def tokenizacao(caminho):
         tokens = nltk.word_tokenize(caminho, language='portuguese')
         tokens = [token.lower() for token in tokens]
 
         return tokens
+
+    def tokenizacao_lematizacao(texto):
+        doc = pln(texto)
+
+        lemas = []
+
+        for senteca in doc.sentences:
+            for palavra in senteca.words:
+                lemas.append(palavra.lemma)
+
+        return lemas
 
     def remocao_stopwords(texto):
         lista_stopwords = [
@@ -71,7 +93,7 @@ class server():
         "ora", "nele", "deste", "ha", "-lhes", "tantos", "quanto", "ja", "sao", "si", "dar-lhes", "tomasse",
         "nosso", "nossos", "nossa", "nossas", "orates", "-o", "aquela", "pois", "portanto", "por que", "porque",
         "caucus", "propria", "proprio", "entao", "tambem", "sempre", "nunca", "enfim", "quase", "daqueles", 
-        "aqueles", "tal"
+        "aqueles", "tal", "he"
         ]
 
         texto_filtrado = []
@@ -109,7 +131,7 @@ class server():
 
     def criar_embeddings(vocabulario):
 
-        palavras, vetores = server.carregar_embedding()
+        palavras, vetores = Processamento.carregar_embedding()
 
         indice = {}
 
@@ -144,9 +166,12 @@ class server():
         for palavra in embeddings:
             if palavra != palavra_sorteada:
                 v_palavra = embeddings[palavra]
-                d = server.distancia_euclidiana(v_alvo, v_palavra)
+                d = Processamento.distancia_euclidiana(v_alvo, v_palavra)
                 resultados[palavra] = d
 
         return resultados
 
-    
+    def criacao_ranking(distancias):
+        ranking = sorted(distancias.items(), key=lambda x: x[1])
+
+        return ranking
