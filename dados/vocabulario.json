@@ -1,0 +1,4310 @@
+{
+    "sabio": {
+        "frequencia": 5,
+        "indice": 0
+    },
+    "mal": {
+        "frequencia": 10,
+        "indice": 1
+    },
+    "compor": {
+        "frequencia": 2,
+        "indice": 2
+    },
+    "longe": {
+        "frequencia": 4,
+        "indice": 3
+    },
+    "agradecer": {
+        "frequencia": 2,
+        "indice": 4
+    },
+    "porquanto": {
+        "frequencia": 3,
+        "indice": 5
+    },
+    "correr": {
+        "frequencia": 13,
+        "indice": 6
+    },
+    "interesse": {
+        "frequencia": 7,
+        "indice": 7
+    },
+    "ciencia": {
+        "frequencia": 20,
+        "indice": 8
+    },
+    "consorte": {
+        "frequencia": 5,
+        "indice": 9
+    },
+    "esperanca": {
+        "frequencia": 4,
+        "indice": 10
+    },
+    "doutor": {
+        "frequencia": 6,
+        "indice": 11
+    },
+    "filho": {
+        "frequencia": 4,
+        "indice": 12
+    },
+    "natural": {
+        "frequencia": 3,
+        "indice": 13
+    },
+    "medico": {
+        "frequencia": 17,
+        "indice": 14
+    },
+    "esperar": {
+        "frequencia": 8,
+        "indice": 15
+    },
+    "tres": {
+        "frequencia": 19,
+        "indice": 16
+    },
+    "ano": {
+        "frequencia": 13,
+        "indice": 17
+    },
+    "quatro": {
+        "frequencia": 9,
+        "indice": 18
+    },
+    "cinco": {
+        "frequencia": 16,
+        "indice": 19
+    },
+    "cabo": {
+        "frequencia": 12,
+        "indice": 20
+    },
+    "tempo": {
+        "frequencia": 22,
+        "indice": 21
+    },
+    "estudo": {
+        "frequencia": 12,
+        "indice": 22
+    },
+    "profundo": {
+        "frequencia": 6,
+        "indice": 23
+    },
+    "materia": {
+        "frequencia": 4,
+        "indice": 24
+    },
+    "escritor": {
+        "frequencia": 2,
+        "indice": 25
+    },
+    "arabe": {
+        "frequencia": 2,
+        "indice": 26
+    },
+    "universidade": {
+        "frequencia": 2,
+        "indice": 27
+    },
+    "acabar": {
+        "frequencia": 20,
+        "indice": 28
+    },
+    "aconselhar": {
+        "frequencia": 3,
+        "indice": 29
+    },
+    "mulher": {
+        "frequencia": 24,
+        "indice": 30
+    },
+    "regimen": {
+        "frequencia": 3,
+        "indice": 31
+    },
+    "especial": {
+        "frequencia": 4,
+        "indice": 32
+    },
+    "ilustre": {
+        "frequencia": 20,
+        "indice": 33
+    },
+    "dama": {
+        "frequencia": 3,
+        "indice": 34
+    },
+    "belo": {
+        "frequencia": 6,
+        "indice": 35
+    },
+    "atender": {
+        "frequencia": 4,
+        "indice": 36
+    },
+    "resistencia": {
+        "frequencia": 3,
+        "indice": 37
+    },
+    "dever": {
+        "frequencia": 15,
+        "indice": 38
+    },
+    "total": {
+        "frequencia": 2,
+        "indice": 39
+    },
+    "dom": {
+        "frequencia": 2,
+        "indice": 40
+    },
+    "curar": {
+        "frequencia": 7,
+        "indice": 41
+    },
+    "pratica": {
+        "frequencia": 2,
+        "indice": 42
+    },
+    "recanto": {
+        "frequencia": 2,
+        "indice": 43
+    },
+    "chamar": {
+        "frequencia": 9,
+        "indice": 44
+    },
+    "especialmente": {
+        "frequencia": 3,
+        "indice": 45
+    },
+    "atencao": {
+        "frequencia": 3,
+        "indice": 46
+    },
+    "—e": {
+        "frequencia": 14,
+        "indice": 47
+    },
+    "exame": {
+        "frequencia": 4,
+        "indice": 48
+    },
+    "patologia": {
+        "frequencia": 3,
+        "indice": 49
+    },
+    "cerebral": {
+        "frequencia": 7,
+        "indice": 50
+    },
+    "colonia": {
+        "frequencia": 2,
+        "indice": 51
+    },
+    "reino": {
+        "frequencia": 3,
+        "indice": 52
+    },
+    "so": {
+        "frequencia": 29,
+        "indice": 53
+    },
+    "autoridade": {
+        "frequencia": 2,
+        "indice": 54
+    },
+    "semelhante": {
+        "frequencia": 2,
+        "indice": 55
+    },
+    "compreender": {
+        "frequencia": 7,
+        "indice": 56
+    },
+    "cobrir": {
+        "frequencia": 3,
+        "indice": 57
+    },
+    "expressao": {
+        "frequencia": 7,
+        "indice": 58
+    },
+    "usar": {
+        "frequencia": 3,
+        "indice": 59
+    },
+    "arroubo": {
+        "frequencia": 2,
+        "indice": 60
+    },
+    "intimidade": {
+        "frequencia": 3,
+        "indice": 61
+    },
+    "modesto": {
+        "frequencia": 6,
+        "indice": 62
+    },
+    "segundo": {
+        "frequencia": 10,
+        "indice": 63
+    },
+    "sabedor": {
+        "frequencia": 2,
+        "indice": 64
+    },
+    "alma": {
+        "frequencia": 13,
+        "indice": 65
+    },
+    "bradar": {
+        "frequencia": 13,
+        "indice": 66
+    },
+    "digno": {
+        "frequencia": 13,
+        "indice": 67
+    },
+    "verdadeiro": {
+        "frequencia": 9,
+        "indice": 68
+    },
+    "emendar": {
+        "frequencia": 5,
+        "indice": 69
+    },
+    "boticario": {
+        "frequencia": 33,
+        "indice": 70
+    },
+    "vila": {
+        "frequencia": 27,
+        "indice": 71
+    },
+    "amigo": {
+        "frequencia": 17,
+        "indice": 72
+    },
+    "cronista": {
+        "frequencia": 11,
+        "indice": 73
+    },
+    "caso": {
+        "frequencia": 33,
+        "indice": 74
+    },
+    "demente": {
+        "frequencia": 4,
+        "indice": 75
+    },
+    "cada": {
+        "frequencia": 6,
+        "indice": 76
+    },
+    "louco": {
+        "frequencia": 16,
+        "indice": 77
+    },
+    "furioso": {
+        "frequencia": 6,
+        "indice": 78
+    },
+    "trancar": {
+        "frequencia": 3,
+        "indice": 79
+    },
+    "casa": {
+        "frequencia": 35,
+        "indice": 80
+    },
+    "morte": {
+        "frequencia": 3,
+        "indice": 81
+    },
+    "vir": {
+        "frequencia": 34,
+        "indice": 82
+    },
+    "vida": {
+        "frequencia": 7,
+        "indice": 83
+    },
+    "manso": {
+        "frequencia": 4,
+        "indice": 84
+    },
+    "andar": {
+        "frequencia": 10,
+        "indice": 85
+    },
+    "rua": {
+        "frequencia": 26,
+        "indice": 86
+    },
+    "entender": {
+        "frequencia": 9,
+        "indice": 87
+    },
+    "desde": {
+        "frequencia": 17,
+        "indice": 88
+    },
+    "tao": {
+        "frequencia": 31,
+        "indice": 89
+    },
+    "costume": {
+        "frequencia": 5,
+        "indice": 90
+    },
+    "pedir": {
+        "frequencia": 23,
+        "indice": 91
+    },
+    "licenca": {
+        "frequencia": 4,
+        "indice": 92
+    },
+    "agasalhar": {
+        "frequencia": 4,
+        "indice": 93
+    },
+    "tratar": {
+        "frequencia": 15,
+        "indice": 94
+    },
+    "edificio": {
+        "frequencia": 2,
+        "indice": 95
+    },
+    "construir": {
+        "frequencia": 3,
+        "indice": 96
+    },
+    "demais": {
+        "frequencia": 8,
+        "indice": 97
+    },
+    "cidade": {
+        "frequencia": 4,
+        "indice": 98
+    },
+    "familia": {
+        "frequencia": 9,
+        "indice": 99
+    },
+    "enfermo": {
+        "frequencia": 9,
+        "indice": 100
+    },
+    "proposta": {
+        "frequencia": 5,
+        "indice": 101
+    },
+    "excitar": {
+        "frequencia": 2,
+        "indice": 102
+    },
+    "curiosidade": {
+        "frequencia": 2,
+        "indice": 103
+    },
+    "encontrar": {
+        "frequencia": 3,
+        "indice": 104
+    },
+    "grande": {
+        "frequencia": 34,
+        "indice": 105
+    },
+    "certo": {
+        "frequencia": 20,
+        "indice": 106
+    },
+    "habito": {
+        "frequencia": 4,
+        "indice": 107
+    },
+    "absurdo": {
+        "frequencia": 3,
+        "indice": 108
+    },
+    "mau": {
+        "frequencia": 2,
+        "indice": 109
+    },
+    "ideia": {
+        "frequencia": 22,
+        "indice": 110
+    },
+    "meter": {
+        "frequencia": 14,
+        "indice": 111
+    },
+    "viver": {
+        "frequencia": 5,
+        "indice": 112
+    },
+    "comum": {
+        "frequencia": 2,
+        "indice": 113
+    },
+    "parecer": {
+        "frequencia": 23,
+        "indice": 114
+    },
+    "sintoma": {
+        "frequencia": 3,
+        "indice": 115
+    },
+    "demencia": {
+        "frequencia": 4,
+        "indice": 116
+    },
+    "faltar": {
+        "frequencia": 3,
+        "indice": 117
+    },
+    "insinuar": {
+        "frequencia": 3,
+        "indice": 118
+    },
+    "vigario": {
+        "frequencia": 11,
+        "indice": 119
+    },
+    "lugar": {
+        "frequencia": 9,
+        "indice": 120
+    },
+    "marido": {
+        "frequencia": 19,
+        "indice": 121
+    },
+    "passeio": {
+        "frequencia": 5,
+        "indice": 122
+    },
+    "estudar": {
+        "frequencia": 10,
+        "indice": 123
+    },
+    "bom": {
+        "frequencia": 18,
+        "indice": 124
+    },
+    "juizo": {
+        "frequencia": 4,
+        "indice": 125
+    },
+    "ficar": {
+        "frequencia": 32,
+        "indice": 126
+    },
+    "desejo": {
+        "frequencia": 2,
+        "indice": 127
+    },
+    "principalmente": {
+        "frequencia": 3,
+        "indice": 128
+    },
+    "comer": {
+        "frequencia": 5,
+        "indice": 129
+    },
+    "adequado": {
+        "frequencia": 2,
+        "indice": 130
+    },
+    "fim": {
+        "frequencia": 19,
+        "indice": 131
+    },
+    "aquele": {
+        "frequencia": 30,
+        "indice": 132
+    },
+    "homem": {
+        "frequencia": 33,
+        "indice": 133
+    },
+    "raro": {
+        "frequencia": 7,
+        "indice": 134
+    },
+    "sagacidade": {
+        "frequencia": 4,
+        "indice": 135
+    },
+    "intencao": {
+        "frequencia": 7,
+        "indice": 136
+    },
+    "esposa": {
+        "frequencia": 11,
+        "indice": 137
+    },
+    "sorrir": {
+        "frequencia": 6,
+        "indice": 138
+    },
+    "medo": {
+        "frequencia": 6,
+        "indice": 139
+    },
+    "onde": {
+        "frequencia": 10,
+        "indice": 140
+    },
+    "vereador": {
+        "frequencia": 28,
+        "indice": 141
+    },
+    "eo": {
+        "frequencia": 5,
+        "indice": 142
+    },
+    "maioria": {
+        "frequencia": 2,
+        "indice": 143
+    },
+    "resolver": {
+        "frequencia": 3,
+        "indice": 144
+    },
+    "autorizar": {
+        "frequencia": 5,
+        "indice": 145
+    },
+    "votar": {
+        "frequencia": 6,
+        "indice": 146
+    },
+    "imposto": {
+        "frequencia": 2,
+        "indice": 147
+    },
+    "tratamento": {
+        "frequencia": 2,
+        "indice": 148
+    },
+    "alojamento": {
+        "frequencia": 2,
+        "indice": 149
+    },
+    "doido": {
+        "frequencia": 8,
+        "indice": 150
+    },
+    "pobre": {
+        "frequencia": 9,
+        "indice": 151
+    },
+    "facil": {
+        "frequencia": 2,
+        "indice": 152
+    },
+    "achar": {
+        "frequencia": 28,
+        "indice": 153
+    },
+    "longo": {
+        "frequencia": 6,
+        "indice": 154
+    },
+    "assentar": {
+        "frequencia": 2,
+        "indice": 155
+    },
+    "permitir": {
+        "frequencia": 2,
+        "indice": 156
+    },
+    "uso": {
+        "frequencia": 5,
+        "indice": 157
+    },
+    "cavalo": {
+        "frequencia": 3,
+        "indice": 158
+    },
+    "enterro": {
+        "frequencia": 2,
+        "indice": 159
+    },
+    "querer": {
+        "frequencia": 18,
+        "indice": 160
+    },
+    "pagar": {
+        "frequencia": 5,
+        "indice": 161
+    },
+    "repetir": {
+        "frequencia": 12,
+        "indice": 162
+    },
+    "vez": {
+        "frequencia": 25,
+        "indice": 163
+    },
+    "hora": {
+        "frequencia": 15,
+        "indice": 164
+    },
+    "ultimo": {
+        "frequencia": 7,
+        "indice": 165
+    },
+    "perder": {
+        "frequencia": 8,
+        "indice": 166
+    },
+    "calculo": {
+        "frequencia": 2,
+        "indice": 167
+    },
+    "possivel": {
+        "frequencia": 2,
+        "indice": 168
+    },
+    "novo": {
+        "frequencia": 19,
+        "indice": 169
+    },
+    "acreditar": {
+        "frequencia": 2,
+        "indice": 170
+    },
+    "trabalho": {
+        "frequencia": 5,
+        "indice": 171
+    },
+    "preciso": {
+        "frequencia": 9,
+        "indice": 172
+    },
+    "arranjar": {
+        "frequencia": 2,
+        "indice": 173
+    },
+    "dentro": {
+        "frequencia": 6,
+        "indice": 174
+    },
+    "enganar": {
+        "frequencia": 3,
+        "indice": 175
+    },
+    "magistrado": {
+        "frequencia": 4,
+        "indice": 176
+    },
+    "comecar": {
+        "frequencia": 12,
+        "indice": 177
+    },
+    "cinquenta": {
+        "frequencia": 4,
+        "indice": 178
+    },
+    "janela": {
+        "frequencia": 11,
+        "indice": 179
+    },
+    "lado": {
+        "frequencia": 13,
+        "indice": 180
+    },
+    "patio": {
+        "frequencia": 2,
+        "indice": 181
+    },
+    "centro": {
+        "frequencia": 2,
+        "indice": 182
+    },
+    "cubiculo": {
+        "frequencia": 4,
+        "indice": 183
+    },
+    "hospede": {
+        "frequencia": 2,
+        "indice": 184
+    },
+    "declarar": {
+        "frequencia": 25,
+        "indice": 185
+    },
+    "tirar": {
+        "frequencia": 3,
+        "indice": 186
+    },
+    "bonito": {
+        "frequencia": 5,
+        "indice": 187
+    },
+    "atribuir": {
+        "frequencia": 7,
+        "indice": 188
+    },
+    "pensamento": {
+        "frequencia": 2,
+        "indice": 189
+    },
+    "merecer": {
+        "frequencia": 8,
+        "indice": 190
+    },
+    "alias": {
+        "frequencia": 6,
+        "indice": 191
+    },
+    "contar": {
+        "frequencia": 12,
+        "indice": 192
+    },
+    "almoco": {
+        "frequencia": 4,
+        "indice": 193
+    },
+    "eminente": {
+        "frequencia": 2,
+        "indice": 194
+    },
+    "nome": {
+        "frequencia": 13,
+        "indice": 195
+    },
+    "asilo": {
+        "frequencia": 3,
+        "indice": 196
+    },
+    "cor": {
+        "frequencia": 2,
+        "indice": 197
+    },
+    "primeira": {
+        "frequencia": 2,
+        "indice": 198
+    },
+    "aparecer": {
+        "frequencia": 2,
+        "indice": 199
+    },
+    "imenso": {
+        "frequencia": 3,
+        "indice": 200
+    },
+    "pompa": {
+        "frequencia": 2,
+        "indice": 201
+    },
+    "povoacao": {
+        "frequencia": 6,
+        "indice": 202
+    },
+    "proximo": {
+        "frequencia": 2,
+        "indice": 203
+    },
+    "gente": {
+        "frequencia": 20,
+        "indice": 204
+    },
+    "assistir": {
+        "frequencia": 2,
+        "indice": 205
+    },
+    "durar": {
+        "frequencia": 2,
+        "indice": 206
+    },
+    "sete": {
+        "frequencia": 6,
+        "indice": 207
+    },
+    "dia": {
+        "frequencia": 39,
+        "indice": 208
+    },
+    "recolher": {
+        "frequencia": 20,
+        "indice": 209
+    },
+    "parente": {
+        "frequencia": 3,
+        "indice": 210
+    },
+    "ocasiao": {
+        "frequencia": 6,
+        "indice": 211
+    },
+    "carinho": {
+        "frequencia": 3,
+        "indice": 212
+    },
+    "caridade": {
+        "frequencia": 5,
+        "indice": 213
+    },
+    "gloria": {
+        "frequencia": 2,
+        "indice": 214
+    },
+    "vestir": {
+        "frequencia": 4,
+        "indice": 215
+    },
+    "flor": {
+        "frequencia": 2,
+        "indice": 216
+    },
+    "seda": {
+        "frequencia": 4,
+        "indice": 217
+    },
+    "ninguem": {
+        "frequencia": 13,
+        "indice": 218
+    },
+    "deixar": {
+        "frequencia": 16,
+        "indice": 219
+    },
+    "visitar": {
+        "frequencia": 3,
+        "indice": 220
+    },
+    "apesar": {
+        "frequencia": 4,
+        "indice": 221
+    },
+    "seculo": {
+        "frequencia": 2,
+        "indice": 222
+    },
+    "cortejar": {
+        "frequencia": 2,
+        "indice": 223
+    },
+    "louvar": {
+        "frequencia": 3,
+        "indice": 224
+    },
+    "fato": {
+        "frequencia": 8,
+        "indice": 225
+    },
+    "sociedade": {
+        "frequencia": 2,
+        "indice": 226
+    },
+    "feliz": {
+        "frequencia": 2,
+        "indice": 227
+    },
+    "alto": {
+        "frequencia": 9,
+        "indice": 228
+    },
+    "espirito": {
+        "frequencia": 11,
+        "indice": 229
+    },
+    "inveja": {
+        "frequencia": 2,
+        "indice": 230
+    },
+    "santo": {
+        "frequencia": 5,
+        "indice": 231
+    },
+    "nobre": {
+        "frequencia": 9,
+        "indice": 232
+    },
+    "expirar": {
+        "frequencia": 2,
+        "indice": 233
+    },
+    "festa": {
+        "frequencia": 2,
+        "indice": 234
+    },
+    "publico": {
+        "frequencia": 13,
+        "indice": 235
+    },
+    "finalmente": {
+        "frequencia": 3,
+        "indice": 236
+    },
+    "capitulo": {
+        "frequencia": 13,
+        "indice": 237
+    },
+    "desvendar": {
+        "frequencia": 2,
+        "indice": 238
+    },
+    "misterio": {
+        "frequencia": 3,
+        "indice": 239
+    },
+    "coracao": {
+        "frequencia": 4,
+        "indice": 240
+    },
+    "senhor": {
+        "frequencia": 12,
+        "indice": 241
+    },
+    "entrar": {
+        "frequencia": 11,
+        "indice": 242
+    },
+    "meu": {
+        "frequencia": 18,
+        "indice": 243
+    },
+    "procedimento": {
+        "frequencia": 2,
+        "indice": 244
+    },
+    "interpretar": {
+        "frequencia": 2,
+        "indice": 245
+    },
+    "conhecer": {
+        "frequencia": 5,
+        "indice": 246
+    },
+    "saber": {
+        "frequencia": 26,
+        "indice": 247
+    },
+    "principal": {
+        "frequencia": 11,
+        "indice": 248
+    },
+    "obra": {
+        "frequencia": 4,
+        "indice": 249
+    },
+    "loucura": {
+        "frequencia": 10,
+        "indice": 250
+    },
+    "diverso": {
+        "frequencia": 2,
+        "indice": 251
+    },
+    "grau": {
+        "frequencia": 2,
+        "indice": 252
+    },
+    "descobrir": {
+        "frequencia": 9,
+        "indice": 253
+    },
+    "causa": {
+        "frequencia": 8,
+        "indice": 254
+    },
+    "fenomeno": {
+        "frequencia": 4,
+        "indice": 255
+    },
+    "remedio": {
+        "frequencia": 8,
+        "indice": 256
+    },
+    "crer": {
+        "frequencia": 10,
+        "indice": 257
+    },
+    "prestar": {
+        "frequencia": 2,
+        "indice": 258
+    },
+    "servico": {
+        "frequencia": 4,
+        "indice": 259
+    },
+    "excelente": {
+        "frequencia": 3,
+        "indice": 260
+    },
+    "corrigir": {
+        "frequencia": 3,
+        "indice": 261
+    },
+    "—sem": {
+        "frequencia": 2,
+        "indice": 262
+    },
+    "continuar": {
+        "frequencia": 5,
+        "indice": 263
+    },
+    "pouco": {
+        "frequencia": 20,
+        "indice": 264
+    },
+    "porem": {
+        "frequencia": 9,
+        "indice": 265
+    },
+    "maior": {
+        "frequencia": 6,
+        "indice": 266
+    },
+    "acrescentar": {
+        "frequencia": 14,
+        "indice": 267
+    },
+    "razao": {
+        "frequencia": 20,
+        "indice": 268
+    },
+    "arraial": {
+        "frequencia": 2,
+        "indice": 269
+    },
+    "vizinho": {
+        "frequencia": 2,
+        "indice": 270
+    },
+    "mes": {
+        "frequencia": 14,
+        "indice": 271
+    },
+    "bastar": {
+        "frequencia": 9,
+        "indice": 272
+    },
+    "primeiro": {
+        "frequencia": 13,
+        "indice": 273
+    },
+    "mandar": {
+        "frequencia": 21,
+        "indice": 274
+    },
+    "galeria": {
+        "frequencia": 3,
+        "indice": 275
+    },
+    "trinta": {
+        "frequencia": 12,
+        "indice": 276
+    },
+    "confessar": {
+        "frequencia": 8,
+        "indice": 277
+    },
+    "imaginar": {
+        "frequencia": 9,
+        "indice": 278
+    },
+    "mundo": {
+        "frequencia": 7,
+        "indice": 279
+    },
+    "exemplo": {
+        "frequencia": 10,
+        "indice": 280
+    },
+    "rapaz": {
+        "frequencia": 5,
+        "indice": 281
+    },
+    "discurso": {
+        "frequencia": 6,
+        "indice": 282
+    },
+    "grego": {
+        "frequencia": 2,
+        "indice": 283
+    },
+    "latim": {
+        "frequencia": 2,
+        "indice": 284
+    },
+    "borla": {
+        "frequencia": 2,
+        "indice": 285
+    },
+    "antes": {
+        "frequencia": 12,
+        "indice": 286
+    },
+    "responder": {
+        "frequencia": 20,
+        "indice": 287
+    },
+    "verdade": {
+        "frequencia": 19,
+        "indice": 288
+    },
+    "tornar": {
+        "frequencia": 5,
+        "indice": 289
+    },
+    "explicar": {
+        "frequencia": 9,
+        "indice": 290
+    },
+    "lingua": {
+        "frequencia": 2,
+        "indice": 291
+    },
+    "provavelmente": {
+        "frequencia": 2,
+        "indice": 292
+    },
+    "trabalhar": {
+        "frequencia": 4,
+        "indice": 293
+    },
+    "efeito": {
+        "frequencia": 8,
+        "indice": 294
+    },
+    "explicacao": {
+        "frequencia": 3,
+        "indice": 295
+    },
+    "divino": {
+        "frequencia": 3,
+        "indice": 296
+    },
+    "refletir": {
+        "frequencia": 2,
+        "indice": 297
+    },
+    "instante": {
+        "frequencia": 8,
+        "indice": 298
+    },
+    "impossivel": {
+        "frequencia": 5,
+        "indice": 299
+    },
+    "humano": {
+        "frequencia": 10,
+        "indice": 300
+    },
+    "puramente": {
+        "frequencia": 2,
+        "indice": 301
+    },
+    "cientifico": {
+        "frequencia": 15,
+        "indice": 302
+    },
+    "realmente": {
+        "frequencia": 4,
+        "indice": 303
+    },
+    "amor": {
+        "frequencia": 4,
+        "indice": 304
+    },
+    "curioso": {
+        "frequencia": 4,
+        "indice": 305
+    },
+    "delirio": {
+        "frequencia": 2,
+        "indice": 306
+    },
+    "vinte": {
+        "frequencia": 12,
+        "indice": 307
+    },
+    "supor": {
+        "frequencia": 3,
+        "indice": 308
+    },
+    "estrela": {
+        "frequencia": 4,
+        "indice": 309
+    },
+    "abrir": {
+        "frequencia": 6,
+        "indice": 310
+    },
+    "braco": {
+        "frequencia": 5,
+        "indice": 311
+    },
+    "alargar": {
+        "frequencia": 2,
+        "indice": 312
+    },
+    "esquecer": {
+        "frequencia": 3,
+        "indice": 313
+    },
+    "perguntar": {
+        "frequencia": 11,
+        "indice": 314
+    },
+    "sol": {
+        "frequencia": 2,
+        "indice": 315
+    },
+    "sair": {
+        "frequencia": 14,
+        "indice": 316
+    },
+    "sala": {
+        "frequencia": 4,
+        "indice": 317
+    },
+    "desgracado": {
+        "frequencia": 2,
+        "indice": 318
+    },
+    "seguir": {
+        "frequencia": 5,
+        "indice": 319
+    },
+    "pe": {
+        "frequencia": 4,
+        "indice": 320
+    },
+    "ambos": {
+        "frequencia": 4,
+        "indice": 321
+    },
+    "ciume": {
+        "frequencia": 3,
+        "indice": 322
+    },
+    "fugitivo": {
+        "frequencia": 2,
+        "indice": 323
+    },
+    "mania": {
+        "frequencia": 5,
+        "indice": 324
+    },
+    "exemplar": {
+        "frequencia": 3,
+        "indice": 325
+    },
+    "notavel": {
+        "frequencia": 2,
+        "indice": 326
+    },
+    "narrar": {
+        "frequencia": 2,
+        "indice": 327
+    },
+    "olhar": {
+        "frequencia": 5,
+        "indice": 328
+    },
+    "nenhum": {
+        "frequencia": 16,
+        "indice": 329
+    },
+    "pessoa": {
+        "frequencia": 28,
+        "indice": 330
+    },
+    "engendrar": {
+        "frequencia": 8,
+        "indice": 331
+    },
+    "ovo": {
+        "frequencia": 4,
+        "indice": 332
+    },
+    "espada": {
+        "frequencia": 4,
+        "indice": 333
+    },
+    "purpura": {
+        "frequencia": 2,
+        "indice": 334
+    },
+    "duque": {
+        "frequencia": 2,
+        "indice": 335
+    },
+    "marques": {
+        "frequencia": 2,
+        "indice": 336
+    },
+    "testa": {
+        "frequencia": 3,
+        "indice": 337
+    },
+    "dedo": {
+        "frequencia": 2,
+        "indice": 338
+    },
+    "seis": {
+        "frequencia": 6,
+        "indice": 339
+    },
+    "etc": {
+        "frequencia": 2,
+        "indice": 340
+    },
+    "especie": {
+        "frequencia": 3,
+        "indice": 341
+    },
+    "vender": {
+        "frequencia": 2,
+        "indice": 342
+    },
+    "rei": {
+        "frequencia": 3,
+        "indice": 343
+    },
+    "cujo": {
+        "frequencia": 11,
+        "indice": 344
+    },
+    "cabeca": {
+        "frequencia": 6,
+        "indice": 345
+    },
+    "mil": {
+        "frequencia": 8,
+        "indice": 346
+    },
+    "falar": {
+        "frequencia": 17,
+        "indice": 347
+    },
+    "monomania": {
+        "frequencia": 3,
+        "indice": 348
+    },
+    "apenas": {
+        "frequencia": 4,
+        "indice": 349
+    },
+    "citar": {
+        "frequencia": 3,
+        "indice": 350
+    },
+    "sujeito": {
+        "frequencia": 3,
+        "indice": 351
+    },
+    "deu": {
+        "frequencia": 2,
+        "indice": 352
+    },
+    "prometer": {
+        "frequencia": 3,
+        "indice": 353
+    },
+    "ceu": {
+        "frequencia": 5,
+        "indice": 354
+    },
+    "adorar": {
+        "frequencia": 2,
+        "indice": 355
+    },
+    "inferno": {
+        "frequencia": 2,
+        "indice": 356
+    },
+    "chegar": {
+        "frequencia": 23,
+        "indice": 357
+    },
+    "proferir": {
+        "frequencia": 2,
+        "indice": 358
+    },
+    "palavra": {
+        "frequencia": 12,
+        "indice": 359
+    },
+    "terra": {
+        "frequencia": 7,
+        "indice": 360
+    },
+    "receber": {
+        "frequencia": 12,
+        "indice": 361
+    },
+    "papel": {
+        "frequencia": 2,
+        "indice": 362
+    },
+    "paciencia": {
+        "frequencia": 5,
+        "indice": 363
+    },
+    "extraordinario": {
+        "frequencia": 5,
+        "indice": 364
+    },
+    "organizar": {
+        "frequencia": 3,
+        "indice": 365
+    },
+    "pessoal": {
+        "frequencia": 4,
+        "indice": 366
+    },
+    "administracao": {
+        "frequencia": 3,
+        "indice": 367
+    },
+    "aceitar": {
+        "frequencia": 9,
+        "indice": 368
+    },
+    "sobrinho": {
+        "frequencia": 2,
+        "indice": 369
+    },
+    "incumbir": {
+        "frequencia": 5,
+        "indice": 370
+    },
+    "execucao": {
+        "frequencia": 4,
+        "indice": 371
+    },
+    "aprovar": {
+        "frequencia": 3,
+        "indice": 372
+    },
+    "roupa": {
+        "frequencia": 2,
+        "indice": 373
+    },
+    "etc.": {
+        "frequencia": 10,
+        "indice": 374
+    },
+    "melhor": {
+        "frequencia": 13,
+        "indice": 375
+    },
+    "somente": {
+        "frequencia": 2,
+        "indice": 376
+    },
+    "cuidar": {
+        "frequencia": 4,
+        "indice": 377
+    },
+    "oficio": {
+        "frequencia": 6,
+        "indice": 378
+    },
+    "governo": {
+        "frequencia": 31,
+        "indice": 379
+    },
+    "temporal": {
+        "frequencia": 2,
+        "indice": 380
+    },
+    "espiritual": {
+        "frequencia": 2,
+        "indice": 381
+    },
+    "rer": {
+        "frequencia": 2,
+        "indice": 382
+    },
+    "unico": {
+        "frequencia": 3,
+        "indice": 383
+    },
+    "proceder": {
+        "frequencia": 4,
+        "indice": 384
+    },
+    "vasto": {
+        "frequencia": 6,
+        "indice": 385
+    },
+    "dividir": {
+        "frequencia": 3,
+        "indice": 386
+    },
+    "classe": {
+        "frequencia": 3,
+        "indice": 387
+    },
+    "passar": {
+        "frequencia": 10,
+        "indice": 388
+    },
+    "acesso": {
+        "frequencia": 2,
+        "indice": 389
+    },
+    "simpatia": {
+        "frequencia": 3,
+        "indice": 390
+    },
+    "gesto": {
+        "frequencia": 7,
+        "indice": 391
+    },
+    "inquirir": {
+        "frequencia": 2,
+        "indice": 392
+    },
+    "circunstancia": {
+        "frequencia": 2,
+        "indice": 393
+    },
+    "doenca": {
+        "frequencia": 2,
+        "indice": 394
+    },
+    "notar": {
+        "frequencia": 6,
+        "indice": 395
+    },
+    "observacao": {
+        "frequencia": 2,
+        "indice": 396
+    },
+    "descoberta": {
+        "frequencia": 2,
+        "indice": 397
+    },
+    "interessante": {
+        "frequencia": 2,
+        "indice": 398
+    },
+    "meio": {
+        "frequencia": 13,
+        "indice": 399
+    },
+    "forca": {
+        "frequencia": 6,
+        "indice": 400
+    },
+    "levar": {
+        "frequencia": 18,
+        "indice": 401
+    },
+    "interrogar": {
+        "frequencia": 8,
+        "indice": 402
+    },
+    "texto": {
+        "frequencia": 4,
+        "indice": 403
+    },
+    "antigo": {
+        "frequencia": 5,
+        "indice": 404
+    },
+    "ruminar": {
+        "frequencia": 2,
+        "indice": 405
+    },
+    "questao": {
+        "frequencia": 5,
+        "indice": 406
+    },
+    "muitas": {
+        "frequencia": 2,
+        "indice": 407
+    },
+    "jantar": {
+        "frequencia": 8,
+        "indice": 408
+    },
+    "cair": {
+        "frequencia": 6,
+        "indice": 409
+    },
+    "amarelo": {
+        "frequencia": 2,
+        "indice": 410
+    },
+    "suspirar": {
+        "frequencia": 2,
+        "indice": 411
+    },
+    "canto": {
+        "frequencia": 2,
+        "indice": 412
+    },
+    "queixa": {
+        "frequencia": 2,
+        "indice": 413
+    },
+    "respeitar": {
+        "frequencia": 2,
+        "indice": 414
+    },
+    "padecer": {
+        "frequencia": 4,
+        "indice": 415
+    },
+    "calar": {
+        "frequencia": 6,
+        "indice": 416
+    },
+    "olho": {
+        "frequencia": 17,
+        "indice": 417
+    },
+    "atrever": {
+        "frequencia": 3,
+        "indice": 418
+    },
+    "ponto": {
+        "frequencia": 10,
+        "indice": 419
+    },
+    "considerar": {
+        "frequencia": 2,
+        "indice": 420
+    },
+    "meia": {
+        "frequencia": 3,
+        "indice": 421
+    },
+    "duzia": {
+        "frequencia": 3,
+        "indice": 422
+    },
+    "lunatico": {
+        "frequencia": 2,
+        "indice": 423
+    },
+    "frase": {
+        "frequencia": 8,
+        "indice": 424
+    },
+    "levantar": {
+        "frequencia": 6,
+        "indice": 425
+    },
+    "negro": {
+        "frequencia": 2,
+        "indice": 426
+    },
+    "lavar": {
+        "frequencia": 2,
+        "indice": 427
+    },
+    "luz": {
+        "frequencia": 2,
+        "indice": 428
+    },
+    "aurora": {
+        "frequencia": 3,
+        "indice": 429
+    },
+    "cronica": {
+        "frequencia": 4,
+        "indice": 430
+    },
+    "arma": {
+        "frequencia": 2,
+        "indice": 431
+    },
+    "intuito": {
+        "frequencia": 2,
+        "indice": 432
+    },
+    "mao": {
+        "frequencia": 21,
+        "indice": 433
+    },
+    "conjetura": {
+        "frequencia": 3,
+        "indice": 434
+    },
+    "sequer": {
+        "frequencia": 2,
+        "indice": 435
+    },
+    "consternado": {
+        "frequencia": 2,
+        "indice": 436
+    },
+    "metal": {
+        "frequencia": 3,
+        "indice": 437
+    },
+    "eterno": {
+        "frequencia": 2,
+        "indice": 438
+    },
+    "menor": {
+        "frequencia": 2,
+        "indice": 439
+    },
+    "superficie": {
+        "frequencia": 2,
+        "indice": 440
+    },
+    "fronte": {
+        "frequencia": 2,
+        "indice": 441
+    },
+    "agua": {
+        "frequencia": 5,
+        "indice": 442
+    },
+    "talvez": {
+        "frequencia": 7,
+        "indice": 443
+    },
+    "sorriso": {
+        "frequencia": 4,
+        "indice": 444
+    },
+    "labio": {
+        "frequencia": 2,
+        "indice": 445
+    },
+    "sentir": {
+        "frequencia": 6,
+        "indice": 446
+    },
+    "chao": {
+        "frequencia": 5,
+        "indice": 447
+    },
+    "sombra": {
+        "frequencia": 2,
+        "indice": 448
+    },
+    "hoje": {
+        "frequencia": 4,
+        "indice": 449
+    },
+    "todavia": {
+        "frequencia": 2,
+        "indice": 450
+    },
+    "sonho": {
+        "frequencia": 2,
+        "indice": 451
+    },
+    "interior": {
+        "frequencia": 2,
+        "indice": 452
+    },
+    "respirar": {
+        "frequencia": 2,
+        "indice": 453
+    },
+    "ar": {
+        "frequencia": 2,
+        "indice": 454
+    },
+    "justamente": {
+        "frequencia": 4,
+        "indice": 455
+    },
+    "convidar": {
+        "frequencia": 4,
+        "indice": 456
+    },
+    "dissimular": {
+        "frequencia": 2,
+        "indice": 457
+    },
+    "gosto": {
+        "frequencia": 4,
+        "indice": 458
+    },
+    "alem": {
+        "frequencia": 4,
+        "indice": 459
+    },
+    "dor": {
+        "frequencia": 3,
+        "indice": 460
+    },
+    "senhora": {
+        "frequencia": 17,
+        "indice": 461
+    },
+    "amar": {
+        "frequencia": 2,
+        "indice": 462
+    },
+    "tomar": {
+        "frequencia": 9,
+        "indice": 463
+    },
+    "entretanto": {
+        "frequencia": 7,
+        "indice": 464
+    },
+    "limitar": {
+        "frequencia": 4,
+        "indice": 465
+    },
+    "tia": {
+        "frequencia": 3,
+        "indice": 466
+    },
+    "note": {
+        "frequencia": 3,
+        "indice": 467
+    },
+    "pensar": {
+        "frequencia": 14,
+        "indice": 468
+    },
+    "impor": {
+        "frequencia": 2,
+        "indice": 469
+    },
+    "racional": {
+        "frequencia": 2,
+        "indice": 470
+    },
+    "dinheiro": {
+        "frequencia": 7,
+        "indice": 471
+    },
+    "gastar": {
+        "frequencia": 3,
+        "indice": 472
+    },
+    "conviccao": {
+        "frequencia": 4,
+        "indice": 473
+    },
+    "ganhar": {
+        "frequencia": 2,
+        "indice": 474
+    },
+    "ontem": {
+        "frequencia": 4,
+        "indice": 475
+    },
+    "livro": {
+        "frequencia": 6,
+        "indice": 476
+    },
+    "arca": {
+        "frequencia": 2,
+        "indice": 477
+    },
+    "deus": {
+        "frequencia": 3,
+        "indice": 478
+    },
+    "ouro": {
+        "frequencia": 5,
+        "indice": 479
+    },
+    "cruzado": {
+        "frequencia": 5,
+        "indice": 480
+    },
+    "sobre": {
+        "frequencia": 10,
+        "indice": 481
+    },
+    "opulencia": {
+        "frequencia": 2,
+        "indice": 482
+    },
+    "enquanto": {
+        "frequencia": 2,
+        "indice": 483
+    },
+    "fitar": {
+        "frequencia": 2,
+        "indice": 484
+    },
+    "ouvido": {
+        "frequencia": 2,
+        "indice": 485
+    },
+    "efetuar": {
+        "frequencia": 2,
+        "indice": 486
+    },
+    "padre": {
+        "frequencia": 4,
+        "indice": 487
+    },
+    "aventura": {
+        "frequencia": 2,
+        "indice": 488
+    },
+    "comitiva": {
+        "frequencia": 4,
+        "indice": 489
+    },
+    "populacao": {
+        "frequencia": 6,
+        "indice": 490
+    },
+    "ali": {
+        "frequencia": 11,
+        "indice": 491
+    },
+    "manha": {
+        "frequencia": 8,
+        "indice": 492
+    },
+    "triste": {
+        "frequencia": 6,
+        "indice": 493
+    },
+    "conquanto": {
+        "frequencia": 3,
+        "indice": 494
+    },
+    "lagrima": {
+        "frequencia": 6,
+        "indice": 495
+    },
+    "sincero": {
+        "frequencia": 2,
+        "indice": 496
+    },
+    "abalar": {
+        "frequencia": 2,
+        "indice": 497
+    },
+    "multidao": {
+        "frequencia": 10,
+        "indice": 498
+    },
+    "inquieto": {
+        "frequencia": 3,
+        "indice": 499
+    },
+    "damas": {
+        "frequencia": 3,
+        "indice": 500
+    },
+    "partir": {
+        "frequencia": 2,
+        "indice": 501
+    },
+    "trazer": {
+        "frequencia": 8,
+        "indice": 502
+    },
+    "orelha": {
+        "frequencia": 3,
+        "indice": 503
+    },
+    "responsabilidade": {
+        "frequencia": 3,
+        "indice": 504
+    },
+    "genio": {
+        "frequencia": 2,
+        "indice": 505
+    },
+    "fita": {
+        "frequencia": 2,
+        "indice": 506
+    },
+    "presente": {
+        "frequencia": 4,
+        "indice": 507
+    },
+    "saudade": {
+        "frequencia": 2,
+        "indice": 508
+    },
+    "futuro": {
+        "frequencia": 2,
+        "indice": 509
+    },
+    "teoria": {
+        "frequencia": 12,
+        "indice": 510
+    },
+    "nova": {
+        "frequencia": 2,
+        "indice": 511
+    },
+    "passo": {
+        "frequencia": 6,
+        "indice": 512
+    },
+    "arrojar": {
+        "frequencia": 2,
+        "indice": 513
+    },
+    "base": {
+        "frequencia": 2,
+        "indice": 514
+    },
+    "cuidado": {
+        "frequencia": 3,
+        "indice": 515
+    },
+    "conversar": {
+        "frequencia": 2,
+        "indice": 516
+    },
+    "assunto": {
+        "frequencia": 4,
+        "indice": 517
+    },
+    "heroico": {
+        "frequencia": 2,
+        "indice": 518
+    },
+    "semana": {
+        "frequencia": 5,
+        "indice": 519
+    },
+    "negocio": {
+        "frequencia": 7,
+        "indice": 520
+    },
+    "importante": {
+        "frequencia": 4,
+        "indice": 521
+    },
+    "noticia": {
+        "frequencia": 11,
+        "indice": 522
+    },
+    "claramente": {
+        "frequencia": 2,
+        "indice": 523
+    },
+    "definir": {
+        "frequencia": 5,
+        "indice": 524
+    },
+    "insistir": {
+        "frequencia": 4,
+        "indice": 525
+    },
+    "bem": {
+        "frequencia": 10,
+        "indice": 526
+    },
+    "consentir": {
+        "frequencia": 2,
+        "indice": 527
+    },
+    "bajulador": {
+        "frequencia": 2,
+        "indice": 528
+    },
+    "aguentar": {
+        "frequencia": 2,
+        "indice": 529
+    },
+    "vil": {
+        "frequencia": 2,
+        "indice": 530
+    },
+    "miseravel": {
+        "frequencia": 2,
+        "indice": 531
+    },
+    "lucro": {
+        "frequencia": 2,
+        "indice": 532
+    },
+    "feio": {
+        "frequencia": 5,
+        "indice": 533
+    },
+    "recado": {
+        "frequencia": 2,
+        "indice": 534
+    },
+    "depressa": {
+        "frequencia": 5,
+        "indice": 535
+    },
+    "alegria": {
+        "frequencia": 5,
+        "indice": 536
+    },
+    "povo": {
+        "frequencia": 18,
+        "indice": 537
+    },
+    "voz": {
+        "frequencia": 6,
+        "indice": 538
+    },
+    "tremulo": {
+        "frequencia": 2,
+        "indice": 539
+    },
+    "magnifico": {
+        "frequencia": 3,
+        "indice": 540
+    },
+    "experiencia": {
+        "frequencia": 13,
+        "indice": 541
+    },
+    "assegurar": {
+        "frequencia": 2,
+        "indice": 542
+    },
+    "senao": {
+        "frequencia": 7,
+        "indice": 543
+    },
+    "investigacao": {
+        "frequencia": 2,
+        "indice": 544
+    },
+    "constante": {
+        "frequencia": 3,
+        "indice": 545
+    },
+    "mudar": {
+        "frequencia": 4,
+        "indice": 546
+    },
+    "objeto": {
+        "frequencia": 4,
+        "indice": 547
+    },
+    "suspeitar": {
+        "frequencia": 2,
+        "indice": 548
+    },
+    "pasmo": {
+        "frequencia": 4,
+        "indice": 549
+    },
+    "conceito": {
+        "frequencia": 4,
+        "indice": 550
+    },
+    "insania": {
+        "frequencia": 4,
+        "indice": 551
+    },
+    "cerebro": {
+        "frequencia": 5,
+        "indice": 552
+    },
+    "historia": {
+        "frequencia": 5,
+        "indice": 553
+    },
+    "reconhecer": {
+        "frequencia": 6,
+        "indice": 554
+    },
+    "perigo": {
+        "frequencia": 6,
+        "indice": 555
+    },
+    "celebre": {
+        "frequencia": 2,
+        "indice": 556
+    },
+    "familiar": {
+        "frequencia": 2,
+        "indice": 557
+    },
+    "abismo": {
+        "frequencia": 2,
+        "indice": 558
+    },
+    "mistura": {
+        "frequencia": 2,
+        "indice": 559
+    },
+    "entidade": {
+        "frequencia": 2,
+        "indice": 560
+    },
+    "odioso": {
+        "frequencia": 2,
+        "indice": 561
+    },
+    "ridiculo": {
+        "frequencia": 2,
+        "indice": 562
+    },
+    "admirar": {
+        "frequencia": 8,
+        "indice": 563
+    },
+    "serio": {
+        "frequencia": 2,
+        "indice": 564
+    },
+    "gracioso": {
+        "frequencia": 3,
+        "indice": 565
+    },
+    "exclamar": {
+        "frequencia": 2,
+        "indice": 566
+    },
+    "0": {
+        "frequencia": 9,
+        "indice": 567
+    },
+    "modestia": {
+        "frequencia": 4,
+        "indice": 568
+    },
+    "entusiasmo": {
+        "frequencia": 2,
+        "indice": 569
+    },
+    "sublime": {
+        "frequencia": 5,
+        "indice": 570
+    },
+    "matraca": {
+        "frequencia": 9,
+        "indice": 571
+    },
+    "modo": {
+        "frequencia": 9,
+        "indice": 572
+    },
+    "porta": {
+        "frequencia": 6,
+        "indice": 573
+    },
+    "matriz": {
+        "frequencia": 2,
+        "indice": 574
+    },
+    "—ou": {
+        "frequencia": 5,
+        "indice": 575
+    },
+    "eis": {
+        "frequencia": 4,
+        "indice": 576
+    },
+    "consistir": {
+        "frequencia": 2,
+        "indice": 577
+    },
+    "reunir": {
+        "frequencia": 3,
+        "indice": 578
+    },
+    "anunciar": {
+        "frequencia": 2,
+        "indice": 579
+    },
+    "tesoura": {
+        "frequencia": 2,
+        "indice": 580
+    },
+    "sistema": {
+        "frequencia": 5,
+        "indice": 581
+    },
+    "paz": {
+        "frequencia": 3,
+        "indice": 582
+    },
+    "energia": {
+        "frequencia": 4,
+        "indice": 583
+    },
+    "possuir": {
+        "frequencia": 5,
+        "indice": 584
+    },
+    "opor": {
+        "frequencia": 2,
+        "indice": 585
+    },
+    "perfeito": {
+        "frequencia": 11,
+        "indice": 586
+    },
+    "afirmar": {
+        "frequencia": 4,
+        "indice": 587
+    },
+    "perfeitamente": {
+        "frequencia": 7,
+        "indice": 588
+    },
+    "falso": {
+        "frequencia": 3,
+        "indice": 589
+    },
+    "absoluto": {
+        "frequencia": 4,
+        "indice": 590
+    },
+    "confianca": {
+        "frequencia": 6,
+        "indice": 591
+    },
+    "instituicao": {
+        "frequencia": 3,
+        "indice": 592
+    },
+    "desprezo": {
+        "frequencia": 2,
+        "indice": 593
+    },
+    "praticar": {
+        "frequencia": 3,
+        "indice": 594
+    },
+    "sim": {
+        "frequencia": 9,
+        "indice": 595
+    },
+    "concluir": {
+        "frequencia": 8,
+        "indice": 596
+    },
+    "perola": {
+        "frequencia": 2,
+        "indice": 597
+    },
+    "termos": {
+        "frequencia": 3,
+        "indice": 598
+    },
+    "equilibrio": {
+        "frequencia": 7,
+        "indice": 599
+    },
+    "faculdade": {
+        "frequencia": 8,
+        "indice": 600
+    },
+    "confiar": {
+        "frequencia": 5,
+        "indice": 601
+    },
+    "principio": {
+        "frequencia": 3,
+        "indice": 602
+    },
+    "discreto": {
+        "frequencia": 2,
+        "indice": 603
+    },
+    "rogar": {
+        "frequencia": 3,
+        "indice": 604
+    },
+    "vago": {
+        "frequencia": 2,
+        "indice": 605
+    },
+    "riso": {
+        "frequencia": 3,
+        "indice": 606
+    },
+    "egregia": {
+        "frequencia": 2,
+        "indice": 607
+    },
+    "contentar": {
+        "frequencia": 4,
+        "indice": 608
+    },
+    "estender": {
+        "frequencia": 4,
+        "indice": 609
+    },
+    "teologia": {
+        "frequencia": 2,
+        "indice": 610
+    },
+    "universo": {
+        "frequencia": 2,
+        "indice": 611
+    },
+    "revolucao": {
+        "frequencia": 5,
+        "indice": 612
+    },
+    "terror": {
+        "frequencia": 9,
+        "indice": 613
+    },
+    "ouvir": {
+        "frequencia": 14,
+        "indice": 614
+    },
+    "recolhido": {
+        "frequencia": 6,
+        "indice": 615
+    },
+    "cidadao": {
+        "frequencia": 3,
+        "indice": 616
+    },
+    "renda": {
+        "frequencia": 2,
+        "indice": 617
+    },
+    "tio": {
+        "frequencia": 5,
+        "indice": 618
+    },
+    "testamento": {
+        "frequencia": 5,
+        "indice": 619
+    },
+    "heranca": {
+        "frequencia": 3,
+        "indice": 620
+    },
+    "emprestimo": {
+        "frequencia": 2,
+        "indice": 621
+    },
+    "miseria": {
+        "frequencia": 2,
+        "indice": 622
+    },
+    "enorme": {
+        "frequencia": 2,
+        "indice": 623
+    },
+    "devagar": {
+        "frequencia": 2,
+        "indice": 624
+    },
+    "mediania": {
+        "frequencia": 2,
+        "indice": 625
+    },
+    "pobreza": {
+        "frequencia": 2,
+        "indice": 626
+    },
+    "chapeu": {
+        "frequencia": 8,
+        "indice": 627
+    },
+    "assomar": {
+        "frequencia": 2,
+        "indice": 628
+    },
+    "bater": {
+        "frequencia": 2,
+        "indice": 629
+    },
+    "ombro": {
+        "frequencia": 2,
+        "indice": 630
+    },
+    "divida": {
+        "frequencia": 2,
+        "indice": 631
+    },
+    "contrario": {
+        "frequencia": 4,
+        "indice": 632
+    },
+    "prazer": {
+        "frequencia": 2,
+        "indice": 633
+    },
+    "incuravel": {
+        "frequencia": 2,
+        "indice": 634
+    },
+    "devedor": {
+        "frequencia": 3,
+        "indice": 635
+    },
+    "atirar": {
+        "frequencia": 2,
+        "indice": 636
+    },
+    "observar": {
+        "frequencia": 2,
+        "indice": 637
+    },
+    "voce": {
+        "frequencia": 4,
+        "indice": 638
+    },
+    "deter": {
+        "frequencia": 4,
+        "indice": 639
+    },
+    "minuto": {
+        "frequencia": 7,
+        "indice": 640
+    },
+    "perdoar": {
+        "frequencia": 2,
+        "indice": 641
+    },
+    "retorquir": {
+        "frequencia": 2,
+        "indice": 642
+    },
+    "negar": {
+        "frequencia": 5,
+        "indice": 643
+    },
+    "ato": {
+        "frequencia": 15,
+        "indice": 644
+    },
+    "rejeitar": {
+        "frequencia": 3,
+        "indice": 645
+    },
+    "provar": {
+        "frequencia": 5,
+        "indice": 646
+    },
+    "caber": {
+        "frequencia": 2,
+        "indice": 647
+    },
+    "pegar": {
+        "frequencia": 2,
+        "indice": 648
+    },
+    "rasgo": {
+        "frequencia": 3,
+        "indice": 649
+    },
+    "credulo": {
+        "frequencia": 2,
+        "indice": 650
+    },
+    "duvida": {
+        "frequencia": 5,
+        "indice": 651
+    },
+    "sentimento": {
+        "frequencia": 7,
+        "indice": 652
+    },
+    "velho": {
+        "frequencia": 3,
+        "indice": 653
+    },
+    "capa": {
+        "frequencia": 2,
+        "indice": 654
+    },
+    "restituir": {
+        "frequencia": 8,
+        "indice": 655
+    },
+    "infelizmente": {
+        "frequencia": 2,
+        "indice": 656
+    },
+    "ensandecer": {
+        "frequencia": 2,
+        "indice": 657
+    },
+    "madrugada": {
+        "frequencia": 2,
+        "indice": 658
+    },
+    "sombrio": {
+        "frequencia": 2,
+        "indice": 659
+    },
+    "terrivel": {
+        "frequencia": 5,
+        "indice": 660
+    },
+    "conforme": {
+        "frequencia": 2,
+        "indice": 661
+    },
+    "versao": {
+        "frequencia": 4,
+        "indice": 662
+    },
+    "tranquilo": {
+        "frequencia": 2,
+        "indice": 663
+    },
+    "espantado": {
+        "frequencia": 2,
+        "indice": 664
+    },
+    "motivo": {
+        "frequencia": 6,
+        "indice": 665
+    },
+    "estimar": {
+        "frequencia": 3,
+        "indice": 666
+    },
+    "mentecapto": {
+        "frequencia": 4,
+        "indice": 667
+    },
+    "interceder": {
+        "frequencia": 2,
+        "indice": 668
+    },
+    "primo": {
+        "frequencia": 6,
+        "indice": 669
+    },
+    "mental": {
+        "frequencia": 8,
+        "indice": 670
+    },
+    "vista": {
+        "frequencia": 2,
+        "indice": 671
+    },
+    "dissipar": {
+        "frequencia": 2,
+        "indice": 672
+    },
+    "interromper": {
+        "frequencia": 2,
+        "indice": 673
+    },
+    "morrer": {
+        "frequencia": 12,
+        "indice": 674
+    },
+    "cara": {
+        "frequencia": 2,
+        "indice": 675
+    },
+    "tremer": {
+        "frequencia": 2,
+        "indice": 676
+    },
+    "boca": {
+        "frequencia": 5,
+        "indice": 677
+    },
+    "lembrar": {
+        "frequencia": 3,
+        "indice": 678
+    },
+    "ameaca": {
+        "frequencia": 2,
+        "indice": 679
+    },
+    "praga": {
+        "frequencia": 2,
+        "indice": 680
+    },
+    "mostrar": {
+        "frequencia": 7,
+        "indice": 681
+    },
+    "par": {
+        "frequencia": 2,
+        "indice": 682
+    },
+    "lancar": {
+        "frequencia": 5,
+        "indice": 683
+    },
+    "ajuizar": {
+        "frequencia": 3,
+        "indice": 684
+    },
+    "infeliz": {
+        "frequencia": 5,
+        "indice": 685
+    },
+    "esquina": {
+        "frequencia": 4,
+        "indice": 686
+    },
+    "namorado": {
+        "frequencia": 3,
+        "indice": 687
+    },
+    "outrora": {
+        "frequencia": 2,
+        "indice": 688
+    },
+    "dirigir": {
+        "frequencia": 2,
+        "indice": 689
+    },
+    "indignacao": {
+        "frequencia": 7,
+        "indice": 690
+    },
+    "vinganca": {
+        "frequencia": 3,
+        "indice": 691
+    },
+    "claro": {
+        "frequencia": 2,
+        "indice": 692
+    },
+    "hipotese": {
+        "frequencia": 2,
+        "indice": 693
+    },
+    "naturalmente": {
+        "frequencia": 2,
+        "indice": 694
+    },
+    "velhaco": {
+        "frequencia": 2,
+        "indice": 695
+    },
+    "murmurar": {
+        "frequencia": 3,
+        "indice": 696
+    },
+    "certeza": {
+        "frequencia": 2,
+        "indice": 697
+    },
+    "pleno": {
+        "frequencia": 3,
+        "indice": 698
+    },
+    "jurar": {
+        "frequencia": 3,
+        "indice": 699
+    },
+    "duvidar": {
+        "frequencia": 4,
+        "indice": 700
+    },
+    "privado": {
+        "frequencia": 5,
+        "indice": 701
+    },
+    "botica": {
+        "frequencia": 2,
+        "indice": 702
+    },
+    "silencio": {
+        "frequencia": 3,
+        "indice": 703
+    },
+    "soltar": {
+        "frequencia": 4,
+        "indice": 704
+    },
+    "fiel": {
+        "frequencia": 2,
+        "indice": 705
+    },
+    "cheio": {
+        "frequencia": 4,
+        "indice": 706
+    },
+    "desdouro": {
+        "frequencia": 2,
+        "indice": 707
+    },
+    "embora": {
+        "frequencia": 4,
+        "indice": 708
+    },
+    "mobilia": {
+        "frequencia": 2,
+        "indice": 709
+    },
+    "jardim": {
+        "frequencia": 3,
+        "indice": 710
+    },
+    "enriquecer": {
+        "frequencia": 2,
+        "indice": 711
+    },
+    "albarda": {
+        "frequencia": 3,
+        "indice": 712
+    },
+    "albardeiro": {
+        "frequencia": 9,
+        "indice": 713
+    },
+    "simples": {
+        "frequencia": 8,
+        "indice": 714
+    },
+    "la": {
+        "frequencia": 5,
+        "indice": 715
+    },
+    "durante": {
+        "frequencia": 3,
+        "indice": 716
+    },
+    "cumprimentar": {
+        "frequencia": 2,
+        "indice": 717
+    },
+    "respeito": {
+        "frequencia": 3,
+        "indice": 718
+    },
+    "bandeira": {
+        "frequencia": 2,
+        "indice": 719
+    },
+    "contemplar": {
+        "frequencia": 2,
+        "indice": 720
+    },
+    "tarde": {
+        "frequencia": 6,
+        "indice": 721
+    },
+    "safar": {
+        "frequencia": 2,
+        "indice": 722
+    },
+    "cedo": {
+        "frequencia": 2,
+        "indice": 723
+    },
+    "fundo": {
+        "frequencia": 3,
+        "indice": 724
+    },
+    "atitude": {
+        "frequencia": 3,
+        "indice": 725
+    },
+    "pedra": {
+        "frequencia": 3,
+        "indice": 726
+    },
+    "aquilo": {
+        "frequencia": 2,
+        "indice": 727
+    },
+    "examinar": {
+        "frequencia": 4,
+        "indice": 728
+    },
+    "noite": {
+        "frequencia": 5,
+        "indice": 729
+    },
+    "alumiar": {
+        "frequencia": 2,
+        "indice": 730
+    },
+    "confirmar": {
+        "frequencia": 2,
+        "indice": 731
+    },
+    "vaga": {
+        "frequencia": 2,
+        "indice": 732
+    },
+    "tamanho": {
+        "frequencia": 3,
+        "indice": 733
+    },
+    "honra": {
+        "frequencia": 3,
+        "indice": 734
+    },
+    "pronto": {
+        "frequencia": 2,
+        "indice": 735
+    },
+    "acontecer": {
+        "frequencia": 7,
+        "indice": 736
+    },
+    "acompanhar": {
+        "frequencia": 6,
+        "indice": 737
+    },
+    "dispensar": {
+        "frequencia": 3,
+        "indice": 738
+    },
+    "impaciencia": {
+        "frequencia": 2,
+        "indice": 739
+    },
+    "guiar": {
+        "frequencia": 2,
+        "indice": 740
+    },
+    "diante": {
+        "frequencia": 5,
+        "indice": 741
+    },
+    "parar": {
+        "frequencia": 5,
+        "indice": 742
+    },
+    "rosto": {
+        "frequencia": 2,
+        "indice": 743
+    },
+    "admiracao": {
+        "frequencia": 2,
+        "indice": 744
+    },
+    "voltar": {
+        "frequencia": 6,
+        "indice": 745
+    },
+    "redobrar": {
+        "frequencia": 2,
+        "indice": 746
+    },
+    "condenar": {
+        "frequencia": 2,
+        "indice": 747
+    },
+    "seguinte": {
+        "frequencia": 4,
+        "indice": 748
+    },
+    "carcere": {
+        "frequencia": 4,
+        "indice": 749
+    },
+    "opiniao": {
+        "frequencia": 9,
+        "indice": 750
+    },
+    "captura": {
+        "frequencia": 2,
+        "indice": 751
+    },
+    "admitir": {
+        "frequencia": 3,
+        "indice": 752
+    },
+    "credito": {
+        "frequencia": 3,
+        "indice": 753
+    },
+    "secreto": {
+        "frequencia": 3,
+        "indice": 754
+    },
+    "destruir": {
+        "frequencia": 4,
+        "indice": 755
+    },
+    "qualquer": {
+        "frequencia": 6,
+        "indice": 756
+    },
+    "momento": {
+        "frequencia": 5,
+        "indice": 757
+    },
+    "moral": {
+        "frequencia": 12,
+        "indice": 758
+    },
+    "natureza": {
+        "frequencia": 3,
+        "indice": 759
+    },
+    "grito": {
+        "frequencia": 7,
+        "indice": 760
+    },
+    "comparar": {
+        "frequencia": 3,
+        "indice": 761
+    },
+    "onca": {
+        "frequencia": 2,
+        "indice": 762
+    },
+    "desmaiar": {
+        "frequencia": 2,
+        "indice": 763
+    },
+    "curto": {
+        "frequencia": 2,
+        "indice": 764
+    },
+    "incidente": {
+        "frequencia": 2,
+        "indice": 765
+    },
+    "damasco": {
+        "frequencia": 2,
+        "indice": 766
+    },
+    "apoiar": {
+        "frequencia": 6,
+        "indice": 767
+    },
+    "anterior": {
+        "frequencia": 4,
+        "indice": 768
+    },
+    "chafariz": {
+        "frequencia": 2,
+        "indice": 769
+    },
+    "ah": {
+        "frequencia": 4,
+        "indice": 770
+    },
+    "proposito": {
+        "frequencia": 2,
+        "indice": 771
+    },
+    "doir": {
+        "frequencia": 2,
+        "indice": 772
+    },
+    "maneira": {
+        "frequencia": 4,
+        "indice": 773
+    },
+    "resposta": {
+        "frequencia": 7,
+        "indice": 774
+    },
+    "falta": {
+        "frequencia": 2,
+        "indice": 775
+    },
+    "prova": {
+        "frequencia": 9,
+        "indice": 776
+    },
+    "evidente": {
+        "frequencia": 3,
+        "indice": 777
+    },
+    "cerca": {
+        "frequencia": 4,
+        "indice": 778
+    },
+    "sentar": {
+        "frequencia": 2,
+        "indice": 779
+    },
+    "mesa": {
+        "frequencia": 2,
+        "indice": 780
+    },
+    "obrigar": {
+        "frequencia": 2,
+        "indice": 781
+    },
+    "visivel": {
+        "frequencia": 2,
+        "indice": 782
+    },
+    "esforco": {
+        "frequencia": 4,
+        "indice": 783
+    },
+    "descontar": {
+        "frequencia": 2,
+        "indice": 784
+    },
+    "parte": {
+        "frequencia": 9,
+        "indice": 785
+    },
+    "enfunar": {
+        "frequencia": 3,
+        "indice": 786
+    },
+    "orador": {
+        "frequencia": 2,
+        "indice": 787
+    },
+    "declamar": {
+        "frequencia": 2,
+        "indice": 788
+    },
+    "nascimento": {
+        "frequencia": 2,
+        "indice": 789
+    },
+    "repto": {
+        "frequencia": 2,
+        "indice": 790
+    },
+    "coroa": {
+        "frequencia": 3,
+        "indice": 791
+    },
+    "vencer": {
+        "frequencia": 6,
+        "indice": 792
+    },
+    "baixar": {
+        "frequencia": 2,
+        "indice": 793
+    },
+    "audacioso": {
+        "frequencia": 2,
+        "indice": 794
+    },
+    "es": {
+        "frequencia": 2,
+        "indice": 795
+    },
+    "sangue": {
+        "frequencia": 5,
+        "indice": 796
+    },
+    "episodio": {
+        "frequencia": 2,
+        "indice": 797
+    },
+    "adiar": {
+        "frequencia": 2,
+        "indice": 798
+    },
+    "conseguir": {
+        "frequencia": 8,
+        "indice": 799
+    },
+    "igual": {
+        "frequencia": 2,
+        "indice": 800
+    },
+    "brilhante": {
+        "frequencia": 3,
+        "indice": 801
+    },
+    "resto": {
+        "frequencia": 4,
+        "indice": 802
+    },
+    "queda": {
+        "frequencia": 2,
+        "indice": 803
+    },
+    "ministro": {
+        "frequencia": 2,
+        "indice": 804
+    },
+    "dragao": {
+        "frequencia": 9,
+        "indice": 805
+    },
+    "gostar": {
+        "frequencia": 2,
+        "indice": 806
+    },
+    "imagem": {
+        "frequencia": 2,
+        "indice": 807
+    },
+    "moco": {
+        "frequencia": 3,
+        "indice": 808
+    },
+    "lesao": {
+        "frequencia": 2,
+        "indice": 809
+    },
+    "gravidade": {
+        "frequencia": 2,
+        "indice": 810
+    },
+    "alojar": {
+        "frequencia": 3,
+        "indice": 811
+    },
+    "declaracao": {
+        "frequencia": 3,
+        "indice": 812
+    },
+    "seguida": {
+        "frequencia": 2,
+        "indice": 813
+    },
+    "estimavel": {
+        "frequencia": 2,
+        "indice": 814
+    },
+    "prender": {
+        "frequencia": 8,
+        "indice": 815
+    },
+    "alguem": {
+        "frequencia": 2,
+        "indice": 816
+    },
+    "dez": {
+        "frequencia": 2,
+        "indice": 817
+    },
+    "apertar": {
+        "frequencia": 3,
+        "indice": 818
+    },
+    "grave": {
+        "frequencia": 4,
+        "indice": 819
+    },
+    "juiz": {
+        "frequencia": 4,
+        "indice": 820
+    },
+    "relacao": {
+        "frequencia": 2,
+        "indice": 821
+    },
+    "apanhar": {
+        "frequencia": 2,
+        "indice": 822
+    },
+    "abaixo": {
+        "frequencia": 5,
+        "indice": 823
+    },
+    "despota": {
+        "frequencia": 2,
+        "indice": 824
+    },
+    "violento": {
+        "frequencia": 2,
+        "indice": 825
+    },
+    "tardar": {
+        "frequencia": 3,
+        "indice": 826
+    },
+    "crescer": {
+        "frequencia": 4,
+        "indice": 827
+    },
+    "capturar": {
+        "frequencia": 4,
+        "indice": 828
+    },
+    "loja": {
+        "frequencia": 2,
+        "indice": 829
+    },
+    "puro": {
+        "frequencia": 4,
+        "indice": 830
+    },
+    "particular": {
+        "frequencia": 3,
+        "indice": 831
+    },
+    "ceder": {
+        "frequencia": 4,
+        "indice": 832
+    },
+    "derrubar": {
+        "frequencia": 2,
+        "indice": 833
+    },
+    "tirano": {
+        "frequencia": 5,
+        "indice": 834
+    },
+    "demanda": {
+        "frequencia": 2,
+        "indice": 835
+    },
+    "acerca": {
+        "frequencia": 4,
+        "indice": 836
+    },
+    "odio": {
+        "frequencia": 4,
+        "indice": 837
+    },
+    "pressa": {
+        "frequencia": 2,
+        "indice": 838
+    },
+    "palestra": {
+        "frequencia": 3,
+        "indice": 839
+    },
+    "comprido": {
+        "frequencia": 2,
+        "indice": 840
+    },
+    "largo": {
+        "frequencia": 2,
+        "indice": 841
+    },
+    "inimigo": {
+        "frequencia": 3,
+        "indice": 842
+    },
+    "recusar": {
+        "frequencia": 5,
+        "indice": 843
+    },
+    "movimento": {
+        "frequencia": 4,
+        "indice": 844
+    },
+    "presidente": {
+        "frequencia": 11,
+        "indice": 845
+    },
+    "conselho": {
+        "frequencia": 3,
+        "indice": 846
+    },
+    "servir": {
+        "frequencia": 3,
+        "indice": 847
+    },
+    "cadaver": {
+        "frequencia": 4,
+        "indice": 848
+    },
+    "distinto": {
+        "frequencia": 2,
+        "indice": 849
+    },
+    "complicar": {
+        "frequencia": 2,
+        "indice": 850
+    },
+    "ganancia": {
+        "frequencia": 2,
+        "indice": 851
+    },
+    "suposto": {
+        "frequencia": 2,
+        "indice": 852
+    },
+    "graca": {
+        "frequencia": 2,
+        "indice": 853
+    },
+    "psicologico": {
+        "frequencia": 3,
+        "indice": 854
+    },
+    "suspender": {
+        "frequencia": 2,
+        "indice": 855
+    },
+    "rebelde": {
+        "frequencia": 5,
+        "indice": 856
+    },
+    "seguramente": {
+        "frequencia": 2,
+        "indice": 857
+    },
+    "erro": {
+        "frequencia": 3,
+        "indice": 858
+    },
+    "alheio": {
+        "frequencia": 3,
+        "indice": 859
+    },
+    "poeta": {
+        "frequencia": 3,
+        "indice": 860
+    },
+    "sinal": {
+        "frequencia": 2,
+        "indice": 861
+    },
+    "situacao": {
+        "frequencia": 4,
+        "indice": 862
+    },
+    "luta": {
+        "frequencia": 3,
+        "indice": 863
+    },
+    "indignar": {
+        "frequencia": 3,
+        "indice": 864
+    },
+    "manifestar": {
+        "frequencia": 3,
+        "indice": 865
+    },
+    "energico": {
+        "frequencia": 2,
+        "indice": 866
+    },
+    "recluso": {
+        "frequencia": 7,
+        "indice": 867
+    },
+    "alienado": {
+        "frequencia": 5,
+        "indice": 868
+    },
+    "dissidente": {
+        "frequencia": 2,
+        "indice": 869
+    },
+    "prudencia": {
+        "frequencia": 2,
+        "indice": 870
+    },
+    "colega": {
+        "frequencia": 4,
+        "indice": 871
+    },
+    "ordem": {
+        "frequencia": 11,
+        "indice": 872
+    },
+    "lei": {
+        "frequencia": 3,
+        "indice": 873
+    },
+    "corpo": {
+        "frequencia": 3,
+        "indice": 874
+    },
+    "dispersar": {
+        "frequencia": 3,
+        "indice": 875
+    },
+    "acao": {
+        "frequencia": 3,
+        "indice": 876
+    },
+    "direito": {
+        "frequencia": 4,
+        "indice": 877
+    },
+    "revolta": {
+        "frequencia": 3,
+        "indice": 878
+    },
+    "unanime": {
+        "frequencia": 4,
+        "indice": 879
+    },
+    "caminhar": {
+        "frequencia": 3,
+        "indice": 880
+    },
+    "diferenca": {
+        "frequencia": 2,
+        "indice": 881
+    },
+    "vestido": {
+        "frequencia": 2,
+        "indice": 882
+    },
+    "posicao": {
+        "frequencia": 3,
+        "indice": 883
+    },
+    "moleque": {
+        "frequencia": 2,
+        "indice": 884
+    },
+    "esquerdo": {
+        "frequencia": 4,
+        "indice": 885
+    },
+    "subito": {
+        "frequencia": 2,
+        "indice": 886
+    },
+    "satisfacao": {
+        "frequencia": 2,
+        "indice": 887
+    },
+    "realidade": {
+        "frequencia": 3,
+        "indice": 888
+    },
+    "resistir": {
+        "frequencia": 7,
+        "indice": 889
+    },
+    "reto": {
+        "frequencia": 2,
+        "indice": 890
+    },
+    "cego": {
+        "frequencia": 2,
+        "indice": 891
+    },
+    "doente": {
+        "frequencia": 5,
+        "indice": 892
+    },
+    "cadeira": {
+        "frequencia": 2,
+        "indice": 893
+    },
+    "fechar": {
+        "frequencia": 4,
+        "indice": 894
+    },
+    "defeito": {
+        "frequencia": 2,
+        "indice": 895
+    },
+    "implorar": {
+        "frequencia": 2,
+        "indice": 896
+    },
+    "intimar": {
+        "frequencia": 3,
+        "indice": 897
+    },
+    "curvar": {
+        "frequencia": 2,
+        "indice": 898
+    },
+    "varanda": {
+        "frequencia": 2,
+        "indice": 899
+    },
+    "frente": {
+        "frequencia": 4,
+        "indice": 900
+    },
+    "vulto": {
+        "frequencia": 2,
+        "indice": 901
+    },
+    "brado": {
+        "frequencia": 3,
+        "indice": 902
+    },
+    "agitar": {
+        "frequencia": 5,
+        "indice": 903
+    },
+    "ordenar": {
+        "frequencia": 2,
+        "indice": 904
+    },
+    "demolir": {
+        "frequencia": 2,
+        "indice": 905
+    },
+    "liberdade": {
+        "frequencia": 5,
+        "indice": 906
+    },
+    "vosso": {
+        "frequencia": 10,
+        "indice": 907
+    },
+    "exigir": {
+        "frequencia": 3,
+        "indice": 908
+    },
+    "assombro": {
+        "frequencia": 5,
+        "indice": 909
+    },
+    "retirar": {
+        "frequencia": 2,
+        "indice": 910
+    },
+    "decisivo": {
+        "frequencia": 2,
+        "indice": 911
+    },
+    "ambicao": {
+        "frequencia": 2,
+        "indice": 912
+    },
+    "derrocar": {
+        "frequencia": 2,
+        "indice": 913
+    },
+    "influencia": {
+        "frequencia": 4,
+        "indice": 914
+    },
+    "incluir": {
+        "frequencia": 2,
+        "indice": 915
+    },
+    "derrota": {
+        "frequencia": 2,
+        "indice": 916
+    },
+    "prisao": {
+        "frequencia": 2,
+        "indice": 917
+    },
+    "furor": {
+        "frequencia": 2,
+        "indice": 918
+    },
+    "sequaz": {
+        "frequencia": 3,
+        "indice": 919
+    },
+    "perceber": {
+        "frequencia": 2,
+        "indice": 920
+    },
+    "impulso": {
+        "frequencia": 2,
+        "indice": 921
+    },
+    "romper": {
+        "frequencia": 2,
+        "indice": 922
+    },
+    "pai": {
+        "frequencia": 3,
+        "indice": 923
+    },
+    "congregar": {
+        "frequencia": 2,
+        "indice": 924
+    },
+    "entravar": {
+        "frequencia": 2,
+        "indice": 925
+    },
+    "inesperado": {
+        "frequencia": 3,
+        "indice": 926
+    },
+    "contra": {
+        "frequencia": 11,
+        "indice": 927
+    },
+    "capitao": {
+        "frequencia": 4,
+        "indice": 928
+    },
+    "fortemente": {
+        "frequencia": 3,
+        "indice": 929
+    },
+    "crise": {
+        "frequencia": 3,
+        "indice": 930
+    },
+    "excesso": {
+        "frequencia": 2,
+        "indice": 931
+    },
+    "escapar": {
+        "frequencia": 4,
+        "indice": 932
+    },
+    "colera": {
+        "frequencia": 3,
+        "indice": 933
+    },
+    "legalidade": {
+        "frequencia": 2,
+        "indice": 934
+    },
+    "atacar": {
+        "frequencia": 4,
+        "indice": 935
+    },
+    "aspecto": {
+        "frequencia": 2,
+        "indice": 936
+    },
+    "entregar": {
+        "frequencia": 6,
+        "indice": 937
+    },
+    "triunfante": {
+        "frequencia": 2,
+        "indice": 938
+    },
+    "ferido": {
+        "frequencia": 6,
+        "indice": 939
+    },
+    "tropa": {
+        "frequencia": 3,
+        "indice": 940
+    },
+    "viva": {
+        "frequencia": 3,
+        "indice": 941
+    },
+    "vice": {
+        "frequencia": 3,
+        "indice": 942
+    },
+    "navalha": {
+        "frequencia": 3,
+        "indice": 943
+    },
+    "vitoria": {
+        "frequencia": 3,
+        "indice": 944
+    },
+    "propor": {
+        "frequencia": 4,
+        "indice": 945
+    },
+    "defesa": {
+        "frequencia": 3,
+        "indice": 946
+    },
+    "ilusao": {
+        "frequencia": 3,
+        "indice": 947
+    },
+    "alvitre": {
+        "frequencia": 4,
+        "indice": 948
+    },
+    "assumir": {
+        "frequencia": 2,
+        "indice": 949
+    },
+    "concurso": {
+        "frequencia": 3,
+        "indice": 950
+    },
+    "prontamente": {
+        "frequencia": 2,
+        "indice": 951
+    },
+    "aclamar": {
+        "frequencia": 5,
+        "indice": 952
+    },
+    "expedir": {
+        "frequencia": 4,
+        "indice": 953
+    },
+    "varias": {
+        "frequencia": 2,
+        "indice": 954
+    },
+    "exposicao": {
+        "frequencia": 3,
+        "indice": 955
+    },
+    "protesto": {
+        "frequencia": 3,
+        "indice": 956
+    },
+    "corrupto": {
+        "frequencia": 3,
+        "indice": 957
+    },
+    "-a": {
+        "frequencia": 2,
+        "indice": 958
+    },
+    "dissolver": {
+        "frequencia": 2,
+        "indice": 959
+    },
+    "ignominiosamente": {
+        "frequencia": 2,
+        "indice": 960
+    },
+    "findar": {
+        "frequencia": 2,
+        "indice": 961
+    },
+    "advertir": {
+        "frequencia": 3,
+        "indice": 962
+    },
+    "vivo": {
+        "frequencia": 3,
+        "indice": 963
+    },
+    "tenebroso": {
+        "frequencia": 3,
+        "indice": 964
+    },
+    "sucesso": {
+        "frequencia": 3,
+        "indice": 965
+    },
+    "abertamente": {
+        "frequencia": 2,
+        "indice": 966
+    },
+    "alistar": {
+        "frequencia": 2,
+        "indice": 967
+    },
+    "fisionomia": {
+        "frequencia": 3,
+        "indice": 968
+    },
+    "palacio": {
+        "frequencia": 2,
+        "indice": 969
+    },
+    "ignorar": {
+        "frequencia": 3,
+        "indice": 970
+    },
+    "obedecer": {
+        "frequencia": 3,
+        "indice": 971
+    },
+    "tolerante": {
+        "frequencia": 2,
+        "indice": 972
+    },
+    "descrer": {
+        "frequencia": 2,
+        "indice": 973
+    },
+    "final": {
+        "frequencia": 5,
+        "indice": 974
+    },
+    "golpe": {
+        "frequencia": 2,
+        "indice": 975
+    },
+    "amiga": {
+        "frequencia": 2,
+        "indice": 976
+    },
+    "cama": {
+        "frequencia": 3,
+        "indice": 977
+    },
+    "qualidade": {
+        "frequencia": 8,
+        "indice": 978
+    },
+    "colocar": {
+        "frequencia": 2,
+        "indice": 979
+    },
+    "consolar": {
+        "frequencia": 2,
+        "indice": 980
+    },
+    "grandemente": {
+        "frequencia": 2,
+        "indice": 981
+    },
+    "vespera": {
+        "frequencia": 3,
+        "indice": 982
+    },
+    "lindo": {
+        "frequencia": 4,
+        "indice": 983
+    },
+    "prestes": {
+        "frequencia": 2,
+        "indice": 984
+    },
+    "postura": {
+        "frequencia": 7,
+        "indice": 985
+    },
+    "arrasamento": {
+        "frequencia": 2,
+        "indice": 986
+    },
+    "hospicio": {
+        "frequencia": 2,
+        "indice": 987
+    },
+    "—o": {
+        "frequencia": 2,
+        "indice": 988
+    },
+    "gravemente": {
+        "frequencia": 2,
+        "indice": 989
+    },
+    "legitimo": {
+        "frequencia": 2,
+        "indice": 990
+    },
+    "eliminar": {
+        "frequencia": 3,
+        "indice": 991
+    },
+    "melindroso": {
+        "frequencia": 2,
+        "indice": 992
+    },
+    "tolerancia": {
+        "frequencia": 2,
+        "indice": 993
+    },
+    "morto": {
+        "frequencia": 5,
+        "indice": 994
+    },
+    "pergunta": {
+        "frequencia": 3,
+        "indice": 995
+    },
+    "onze": {
+        "frequencia": 2,
+        "indice": 996
+    },
+    "austero": {
+        "frequencia": 3,
+        "indice": 997
+    },
+    "positivo": {
+        "frequencia": 2,
+        "indice": 998
+    },
+    "rival": {
+        "frequencia": 2,
+        "indice": 999
+    },
+    "dificil": {
+        "frequencia": 3,
+        "indice": 1000
+    },
+    "doutrina": {
+        "frequencia": 4,
+        "indice": 1001
+    },
+    "entrega": {
+        "frequencia": 2,
+        "indice": 1002
+    },
+    "ausencia": {
+        "frequencia": 2,
+        "indice": 1003
+    },
+    "secretario": {
+        "frequencia": 3,
+        "indice": 1004
+    },
+    "hesitar": {
+        "frequencia": 2,
+        "indice": 1005
+    },
+    "poupar": {
+        "frequencia": 2,
+        "indice": 1006
+    },
+    "vicio": {
+        "frequencia": 2,
+        "indice": 1007
+    },
+    "alcancar": {
+        "frequencia": 2,
+        "indice": 1008
+    },
+    "anel": {
+        "frequencia": 3,
+        "indice": 1009
+    },
+    "compadre": {
+        "frequencia": 2,
+        "indice": 1010
+    },
+    "obscuro": {
+        "frequencia": 2,
+        "indice": 1011
+    },
+    "gesticular": {
+        "frequencia": 2,
+        "indice": 1012
+    },
+    "baile": {
+        "frequencia": 4,
+        "indice": 1013
+    },
+    "inteiro": {
+        "frequencia": 3,
+        "indice": 1014
+    },
+    "desconfiar": {
+        "frequencia": 2,
+        "indice": 1015
+    },
+    "corte": {
+        "frequencia": 2,
+        "indice": 1016
+    },
+    "preparar": {
+        "frequencia": 2,
+        "indice": 1017
+    },
+    "colar": {
+        "frequencia": 3,
+        "indice": 1018
+    },
+    "granada": {
+        "frequencia": 3,
+        "indice": 1019
+    },
+    "safira": {
+        "frequencia": 3,
+        "indice": 1020
+    },
+    "acordo": {
+        "frequencia": 2,
+        "indice": 1021
+    },
+    "oficiar": {
+        "frequencia": 2,
+        "indice": 1022
+    },
+    "expor": {
+        "frequencia": 2,
+        "indice": 1023
+    },
+    "verificar": {
+        "frequencia": 2,
+        "indice": 1024
+    },
+    "°": {
+        "frequencia": 3,
+        "indice": 1025
+    },
+    "molestia": {
+        "frequencia": 2,
+        "indice": 1026
+    },
+    "excluir": {
+        "frequencia": 2,
+        "indice": 1027
+    },
+    "oposto": {
+        "frequencia": 2,
+        "indice": 1028
+    },
+    "desequilibrio": {
+        "frequencia": 3,
+        "indice": 1029
+    },
+    "luminaria": {
+        "frequencia": 2,
+        "indice": 1030
+    },
+    "acontecimento": {
+        "frequencia": 2,
+        "indice": 1031
+    },
+    "§": {
+        "frequencia": 3,
+        "indice": 1032
+    },
+    "exercer": {
+        "frequencia": 2,
+        "indice": 1033
+    },
+    "idade": {
+        "frequencia": 2,
+        "indice": 1034
+    },
+    "perdao": {
+        "frequencia": 2,
+        "indice": 1035
+    },
+    "adagio": {
+        "frequencia": 2,
+        "indice": 1036
+    },
+    "ressentimento": {
+        "frequencia": 2,
+        "indice": 1037
+    },
+    "virtude": {
+        "frequencia": 2,
+        "indice": 1038
+    },
+    "legislar": {
+        "frequencia": 2,
+        "indice": 1039
+    },
+    "estabelecer": {
+        "frequencia": 3,
+        "indice": 1040
+    },
+    "clausula": {
+        "frequencia": 3,
+        "indice": 1041
+    },
+    "prazo": {
+        "frequencia": 4,
+        "indice": 1042
+    },
+    "compelir": {
+        "frequencia": 2,
+        "indice": 1043
+    },
+    "pedido": {
+        "frequencia": 2,
+        "indice": 1044
+    },
+    "arrancar": {
+        "frequencia": 2,
+        "indice": 1045
+    },
+    "adversario": {
+        "frequencia": 2,
+        "indice": 1046
+    },
+    "beleza": {
+        "frequencia": 2,
+        "indice": 1047
+    },
+    "advogado": {
+        "frequencia": 4,
+        "indice": 1048
+    },
+    "agente": {
+        "frequencia": 3,
+        "indice": 1049
+    },
+    "perfeicao": {
+        "frequencia": 3,
+        "indice": 1050
+    },
+    "sagaz": {
+        "frequencia": 2,
+        "indice": 1051
+    },
+    "cassar": {
+        "frequencia": 2,
+        "indice": 1052
+    },
+    "recorrer": {
+        "frequencia": 2,
+        "indice": 1053
+    },
+    "cao": {
+        "frequencia": 2,
+        "indice": 1054
+    },
+    "terapeutico": {
+        "frequencia": 3,
+        "indice": 1055
+    },
+    "itaguaiense": {
+        "frequencia": 2,
+        "indice": 1056
+    },
+    "terapeutica": {
+        "frequencia": 2,
+        "indice": 1057
+    },
+    "cura": {
+        "frequencia": 5,
+        "indice": 1058
+    },
+    "predominante": {
+        "frequencia": 2,
+        "indice": 1059
+    },
+    "aplicar": {
+        "frequencia": 3,
+        "indice": 1060
+    },
+    "incutir": {
+        "frequencia": 2,
+        "indice": 1061
+    },
+    "estado": {
+        "frequencia": 3,
+        "indice": 1062
+    },
+    "cabeleira": {
+        "frequencia": 2,
+        "indice": 1063
+    },
+    "honorifico": {
+        "frequencia": 2,
+        "indice": 1064
+    },
+    "felicidade": {
+        "frequencia": 2,
+        "indice": 1065
+    },
+    "conter": {
+        "frequencia": 2,
+        "indice": 1066
+    },
+    "tratante": {
+        "frequencia": 2,
+        "indice": 1067
+    },
+    "ultra": {
+        "frequencia": 2,
+        "indice": 1068
+    },
+    "alegre": {
+        "frequencia": 3,
+        "indice": 1069
+    },
+    "biblioteca": {
+        "frequencia": 2,
+        "indice": 1070
+    },
+    "majestoso": {
+        "frequencia": 2,
+        "indice": 1071
+    },
+    "existir": {
+        "frequencia": 2,
+        "indice": 1072
+    },
+    "conclusao": {
+        "frequencia": 2,
+        "indice": 1073
+    },
+    "tempestade": {
+        "frequencia": 2,
+        "indice": 1074
+    },
+    "assembleia": {
+        "frequencia": 2,
+        "indice": 1075
+    },
+    "boato": {
+        "frequencia": 3,
+        "indice": 1076
+    }
+}

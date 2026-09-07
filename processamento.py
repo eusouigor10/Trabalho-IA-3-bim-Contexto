@@ -8,6 +8,9 @@ import math
 import stanza
 #stanza.download("pt")
 pln = stanza.Pipeline("pt")
+import json
+import numpy as np
+import os
 
 class Processamento():
 
@@ -175,3 +178,37 @@ class Processamento():
         ranking = sorted(distancias.items(), key=lambda x: x[1])
 
         return ranking
+
+    def salvar_dados(vocabulario, embeddings):
+        os.makedirs("dados", exist_ok=True)
+
+        dados_vocabulario = {}
+        matriz_embeddings = []
+
+        for indice, palavra in enumerate(embeddings):
+            dados_vocabulario[palavra] = {
+                "frequencia": vocabulario[palavra],
+                "indice": indice
+            }
+
+            matriz_embeddings.append(embeddings[palavra])
+
+        with open("dados/vocabulario.json", "w", encoding="utf-8") as arquivo:
+            json.dump(
+                dados_vocabulario,
+                arquivo,
+                ensure_ascii=False,
+                indent=4
+            )
+
+        matriz_embeddings = np.array(matriz_embeddings)
+
+        np.save("dados/embeddings.npy", matriz_embeddings)
+
+    def carregar_dados():
+        with open("dados/vocabulario.json", "r", encoding="utf-8") as arquivo:
+            vocabulario = json.load(arquivo)
+
+        embeddings = np.load("dados/embeddings.npy")
+
+        return vocabulario, embeddings
