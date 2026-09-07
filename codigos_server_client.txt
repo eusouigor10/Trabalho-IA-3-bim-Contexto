@@ -1,6 +1,6 @@
 ==================
 server.py
-=======
+========
 from xmlrpc.server import SimpleXMLRPCServer
 
 acervo = {
