@@ -6,7 +6,6 @@ from safetensors.numpy import load_file
 import random
 import math
 import stanza
-#stanza.download("pt")
 pln = stanza.Pipeline("pt")
 import json
 import numpy as np
