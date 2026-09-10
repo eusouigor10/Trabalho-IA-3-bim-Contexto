@@ -35,7 +35,7 @@ Interface gráfica do jogo "O Contexto do Alienista", desenvolvida em Python uti
 ##  Como Executar o Jogo
 Com o terminal na pasta raiz do projeto (e a venv ativada, se estiver usando), execute o arquivo da interface principal:
      
-     python interfaceMain.py
+     python interface_main.py
      
   * A aplicação abrirá diretamente.
      
