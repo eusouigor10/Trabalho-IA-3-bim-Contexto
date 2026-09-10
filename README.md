@@ -30,3 +30,12 @@ Interface gráfica do jogo "O Contexto do Alienista", desenvolvida em Python uti
 3. **Instale as bibliotecas necessárias:**
    ```bash
    pip install customtkinter pillow
+
+
+##  Como Executar o Jogo
+Com o terminal na pasta raiz do projeto (e a venv ativada, se estiver usando), execute o arquivo da interface principal:
+     
+     python interfaceMain.py
+     
+  * A aplicação abrirá diretamente.
+     
