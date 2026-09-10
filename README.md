@@ -4,14 +4,14 @@ Interface gráfica do jogo "O Contexto do Alienista", desenvolvida em Python uti
 
 ---
 
-## 📋 Pré-requisitos
+##  Pré-requisitos
 
 * **Python 3.10** ou superior instalado na máquina.
 * **Ambiente Virtual (recomendado):** Recomenda-se a utilização de uma `venv` para isolar as dependências do projeto.
 
 ---
 
-## ⚙️ Instalação das Dependências
+##  Instalação das Dependências
 
 1. **Abra o terminal** na pasta raiz do projeto.
 
