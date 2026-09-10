@@ -1,27 +1,17 @@
+import os
 import customtkinter as ctk
 from PIL import Image
-import os
-import random
 
 class ContextoAlienistaApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
         self.title("O Contexto do Alienista")
-        
-        # 1. Define a resolução padrão ao restaurar/desmaximizar
         self.geometry("1280x720")
-        
-        # 2. Permite redimensionar a janela
         self.resizable(True, True)
-        
-        # 3. Define um tamanho mínimo para não quebrar o layout
         self.minsize(900, 600)
-
-        # 4. Abre maximizado logo na inicialização
         self.after(0, lambda: self.state("zoomed"))
 
-        # Container principal
         self.main_frame = ctk.CTkFrame(self)
         self.main_frame.pack(fill="both", expand=True)
 
@@ -43,7 +33,6 @@ class ContextoAlienistaApp(ctk.CTk):
             bg_label.place(x=0, y=0, relwidth=1, relheight=1)
             parent_do_menu = bg_label 
 
-        # Painel central estilizado
         menu_card = ctk.CTkFrame(
             parent_do_menu, 
             corner_radius=20, 
@@ -96,10 +85,7 @@ class ContextoAlienistaApp(ctk.CTk):
             widget.destroy()
 
         self.historico_tentativas = []
-        # Palavra secreta mockada temporariamente
-        self.palavra_secreta_mock = "a"
 
-        # --- Top Bar ---
         top_bar = ctk.CTkFrame(self.main_frame, fg_color="transparent")
         top_bar.pack(fill="x", padx=40, pady=(20, 10))
 
@@ -124,7 +110,6 @@ class ContextoAlienistaApp(ctk.CTk):
         )
         lbl_titulo_jogo.pack(side="right")
 
-        # --- Container Central do Jogo ---
         game_container = ctk.CTkFrame(
             self.main_frame,
             corner_radius=15,
@@ -134,7 +119,6 @@ class ContextoAlienistaApp(ctk.CTk):
         )
         game_container.pack(fill="both", expand=True, padx=40, pady=(0, 20))
 
-        # --- Entrada de Palavra ---
         input_frame = ctk.CTkFrame(game_container, fg_color="transparent")
         input_frame.pack(fill="x", padx=30, pady=(20, 10))
 
@@ -161,7 +145,6 @@ class ContextoAlienistaApp(ctk.CTk):
         )
         btn_enviar.pack(side="right")
 
-        # --- Cabeçalho da Tabela ---
         header_table = ctk.CTkFrame(game_container, fg_color="#141414", height=35, corner_radius=6)
         header_table.pack(fill="x", padx=30, pady=(10, 5))
 
@@ -174,11 +157,9 @@ class ContextoAlienistaApp(ctk.CTk):
         lbl_h_sim = ctk.CTkLabel(header_table, text="Proximidade", font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), text_color="#A0A0A0", width=120)
         lbl_h_sim.pack(side="right", padx=10)
 
-        # --- Lista de Tentativas ---
         self.scroll_historico = ctk.CTkScrollableFrame(game_container, fg_color="transparent")
         self.scroll_historico.pack(fill="both", expand=True, padx=30, pady=(0, 10))
 
-        # --- Barra Inferior ---
         bottom_bar = ctk.CTkFrame(game_container, fg_color="transparent")
         bottom_bar.pack(fill="x", padx=30, pady=(10, 20))
 
@@ -210,68 +191,24 @@ class ContextoAlienistaApp(ctk.CTk):
             return
 
         self.entry_palavra.delete(0, "end")
-
-        # Mock: Verifica se acertou a palavra secreta ("a")
-        if palpite == self.palavra_secreta_mock:
-            self.carregar_tela_fim_jogo(motivo="vitoria", palavra_secreta=self.palavra_secreta_mock)
-            return
-
-        # Mock provisório enquanto o servidor não está conectado
-        posicao_ficticia = random.randint(2, 500)
-        
-        self.historico_tentativas.append({"palavra": palpite, "posicao": posicao_ficticia})
-        self.historico_tentativas.sort(key=lambda item: item["posicao"])
-        
-        self.atualizar_tabela_historico()
-
-    def atualizar_tabela_historico(self):
-        for widget in self.scroll_historico.winfo_children():
-            widget.destroy()
-
-        for item in self.historico_tentativas:
-            row = ctk.CTkFrame(self.scroll_historico, fg_color="#262626", height=40, corner_radius=6)
-            row.pack(fill="x", pady=4)
-
-            cor_pos = "#52BE80" if item["posicao"] <= 50 else ("#F4D03F" if item["posicao"] <= 200 else "#E74C3C")
-
-            lbl_pos = ctk.CTkLabel(row, text=f"#{item['posicao']}", font=ctk.CTkFont(family="Georgia", size=14, weight="bold"), text_color=cor_pos, width=80)
-            lbl_pos.pack(side="left", padx=10)
-
-            lbl_palavra = ctk.CTkLabel(row, text=item["palavra"], font=ctk.CTkFont(family="Georgia", size=14), text_color="#FFFFFF")
-            lbl_palavra.pack(side="left", padx=20)
-
-            barra_progresso = ctk.CTkProgressBar(row, width=120, height=10)
-            progresso = max(0.05, 1.0 - (item["posicao"] / 500.0))
-            barra_progresso.set(progresso)
-            barra_progresso.pack(side="right", padx=10)
+        # Nível jogável: aguardando retorno RPC do servidor com posição e similaridade
+        print(f"[Cliente] Palpite submetido: '{palpite}' -> Aguardando integração do servidor RPC.")
 
     def solicitar_dica(self):
-        # Simulação temporária de dica
-        self.historico_tentativas.append({"palavra": "alienista", "posicao": 42})
-        self.historico_tentativas.sort(key=lambda item: item["posicao"])
-        self.atualizar_tabela_historico()
+        # Nível jogável: aguardando método RPC do servidor
+        print("[Cliente] Solicitação de dica -> Aguardando integração do servidor RPC.")
 
     def solicitar_desistencia(self):
-        # Quando o RPC estiver pronto, o servidor retornará a palavra secreta e a lista de palavras mais próximas.
-        # Por enquanto, chamamos a tela com a palavra secreta 'a'.
-        self.carregar_tela_fim_jogo(motivo="desistencia", palavra_secreta=self.palavra_secreta_mock)
+        # Navega para a tela de fim de jogo
+        self.carregar_tela_fim_jogo(motivo="desistencia")
 
-    def carregar_tela_fim_jogo(self, motivo="desistencia", palavra_secreta="a", top_proximas=None):
-        # Limpa widgets da tela anterior
+    def carregar_tela_fim_jogo(self, motivo="desistencia", palavra_secreta="---", top_proximas=None):
         for widget in self.main_frame.winfo_children():
             widget.destroy()
 
-        # Mock de palavras mais próximas caso nenhuma lista venha do servidor
         if top_proximas is None:
-            top_proximas = [
-                {"palavra": "bacamarte", "posicao": 2, "similaridade": "0.94"},
-                {"palavra": "alienista", "posicao": 3, "similaridade": "0.91"},
-                {"palavra": "itaguai", "posicao": 4, "similaridade": "0.88"},
-                {"palavra": "loucura", "posicao": 5, "similaridade": "0.85"},
-                {"palavra": "hospicio", "posicao": 6, "similaridade": "0.81"}
-            ]
+            top_proximas = []
 
-        # Card Central de Resultado
         end_card = ctk.CTkFrame(
             self.main_frame,
             corner_radius=15,
@@ -281,13 +218,8 @@ class ContextoAlienistaApp(ctk.CTk):
         )
         end_card.pack(fill="both", expand=True, padx=80, pady=40)
 
-        # Cabeçalho de Status
-        if motivo == "vitoria":
-            titulo_texto = "🎉 Parabéns! Você Acertou!"
-            cor_titulo = "#52BE80"
-        else:
-            titulo_texto = "Partida Encerrada (Desistência)"
-            cor_titulo = "#E74C3C"
+        titulo_texto = "🎉 Parabéns! Você Acertou!" if motivo == "vitoria" else "Partida Encerrada (Desistência)"
+        cor_titulo = "#52BE80" if motivo == "vitoria" else "#E74C3C"
 
         lbl_status = ctk.CTkLabel(
             end_card,
@@ -297,7 +229,6 @@ class ContextoAlienistaApp(ctk.CTk):
         )
         lbl_status.pack(pady=(25, 10))
 
-        # Destaque da Palavra Secreta
         frame_resposta = ctk.CTkFrame(end_card, fg_color="#141414", corner_radius=10)
         frame_resposta.pack(fill="x", padx=60, pady=10)
 
@@ -317,7 +248,6 @@ class ContextoAlienistaApp(ctk.CTk):
         )
         lbl_palavra_certa.pack(pady=(0, 10))
 
-        # Subtítulo das palavras mais próximas
         lbl_sub = ctk.CTkLabel(
             end_card,
             text="Palavras mais próximas da palavra secreta:",
@@ -326,24 +256,31 @@ class ContextoAlienistaApp(ctk.CTk):
         )
         lbl_sub.pack(pady=(15, 5))
 
-        # Tabela com as palavras mais próximas
         scroll_proximas = ctk.CTkScrollableFrame(end_card, fg_color="transparent")
         scroll_proximas.pack(fill="both", expand=True, padx=60, pady=(0, 15))
 
-        for item in top_proximas:
-            row = ctk.CTkFrame(scroll_proximas, fg_color="#262626", height=38, corner_radius=6)
-            row.pack(fill="x", pady=3)
+        if not top_proximas:
+            lbl_aviso = ctk.CTkLabel(
+                scroll_proximas,
+                text="O ranking de proximidade será carregado via servidor RPC após o cálculo dos embeddings.",
+                text_color="#777777",
+                font=ctk.CTkFont(family="Georgia", size=13)
+            )
+            lbl_aviso.pack(pady=30)
+        else:
+            for item in top_proximas:
+                row = ctk.CTkFrame(scroll_proximas, fg_color="#262626", height=38, corner_radius=6)
+                row.pack(fill="x", pady=3)
 
-            lbl_p = ctk.CTkLabel(row, text=f"#{item['posicao']}", font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), text_color="#52BE80", width=60)
-            lbl_p.pack(side="left", padx=10)
+                lbl_p = ctk.CTkLabel(row, text=f"#{item['posicao']}", font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), text_color="#52BE80", width=60)
+                lbl_p.pack(side="left", padx=10)
 
-            lbl_w = ctk.CTkLabel(row, text=item["palavra"], font=ctk.CTkFont(family="Georgia", size=14), text_color="#FFFFFF")
-            lbl_w.pack(side="left", padx=15)
+                lbl_w = ctk.CTkLabel(row, text=item["palavra"], font=ctk.CTkFont(family="Georgia", size=14), text_color="#FFFFFF")
+                lbl_w.pack(side="left", padx=15)
 
-            lbl_s = ctk.CTkLabel(row, text=f"Sim: {item['similaridade']}", font=ctk.CTkFont(family="Georgia", size=13), text_color="#A0A0A0")
-            lbl_s.pack(side="right", padx=15)
+                lbl_s = ctk.CTkLabel(row, text=f"Sim: {item['similaridade']}", font=ctk.CTkFont(family="Georgia", size=13), text_color="#A0A0A0")
+                lbl_s.pack(side="right", padx=15)
 
-        # Botões de Ação Final
         bottom_actions = ctk.CTkFrame(end_card, fg_color="transparent")
         bottom_actions.pack(fill="x", padx=60, pady=(10, 25))
 
