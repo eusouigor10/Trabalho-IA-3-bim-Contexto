@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 embedding/embeddings.safetensors
 embedding/vocab.txt
+.venv/
