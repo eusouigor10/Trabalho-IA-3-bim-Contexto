@@ -6,7 +6,6 @@ from safetensors.numpy import load_file
 import random
 import math
 import stanza
-pln = stanza.Pipeline("pt")
 import json
 import numpy as np
 import os
@@ -49,6 +48,7 @@ class Processamento():
         return tokens
 
     def tokenizacao_lematizacao(texto):
+        pln = stanza.Pipeline("pt")
         doc = pln(texto)
 
         lemas = []
@@ -95,7 +95,14 @@ class Processamento():
         "ora", "nele", "deste", "ha", "-lhes", "tantos", "quanto", "ja", "sao", "si", "dar-lhes", "tomasse",
         "nosso", "nossos", "nossa", "nossas", "orates", "-o", "aquela", "pois", "portanto", "por que", "porque",
         "caucus", "propria", "proprio", "entao", "tambem", "sempre", "nunca", "enfim", "quase", "daqueles", 
-        "aqueles", "tal", "he"
+        "aqueles", "tal", "he", "somente", "dela", "dele", "deles", "delas", "diante", "diante-de", "depois-de", "antes-de", "atraves-de",
+        "debaixo-de", "acima-de", "além-de", "perto-de", "longe-de", "atrás-de", "dentro-de", "fora-de", "ao-lado-de", "em-cima-de", "em-baixo-de", "em-frente-de",
+        "em-torno-de", "em-meio-a", "em-vez-de", "de-acordo-com", "de-conformidade-com", "de-acordo-com-o", "de-conformidade-com-o", "de-acordo-com-a", "de-conformidade-com-a",
+        "de-acordo-com-os", "de-conformidade-com-os", "de-acordo-com-as", "de-conformidade-com-as", "de-acordo-com-um", "de-conformidade-com-um", "de-acordo-com-uma", "de-conformidade-com-uma",
+        "de-acordo-com-uns", "de-conformidade-com-uns", "de-acordo-com-umas", "de-conformidade-com-umas", "de-acordo-com-o-que", "de-conformidade-com-o-que", "de-acordo-com-a-que", "de-conformidade-com-a-que",
+        "de-acordo-com-os-que", "de-conformidade-com-os-que", "justamente", "exatamente", "precisamente", "efetivamente", "realmente", "verdadeiramente", "certamente", "indubitavelmente", "inquestionavelmente", "inequivocamente",
+        "sem-duvida", "sem-sombra-de-duvida", "onde", "quando", "como", "quanto", "qual", "quais", "quem", "que", "cujos", "cuja", "cujas", "cujo", "cujo-a", "cujo-as", "cujo-os",
+        "ainda-que", "apesar-de", "embora", "mesmo"
         ]
 
         texto_filtrado = []
@@ -160,18 +167,22 @@ class Processamento():
 
         return math.sqrt(soma)
 
-    def calculo_distancias(palavra_sorteada, embeddings):
-        resultados = {}
+    def calculo_distancias(palavra_sorteada, vocabulario, embeddings):
+        indice_alvo = vocabulario[palavra_sorteada]["indice"]
+        v_alvo = embeddings[indice_alvo]
 
-        v_alvo = embeddings[palavra_sorteada]
+        distancias = {}
 
-        for palavra in embeddings:
-            if palavra != palavra_sorteada:
-                v_palavra = embeddings[palavra]
-                d = Processamento.distancia_euclidiana(v_alvo, v_palavra)
-                resultados[palavra] = d
+        for palavra, dados in vocabulario.items():
+            indice = dados["indice"]
+            vetor = embeddings[indice]
 
-        return resultados
+            distancias[palavra] = Processamento.distancia_euclidiana(
+                v_alvo,
+                vetor
+            )
+
+        return distancias
 
     def criacao_ranking(distancias):
         ranking = sorted(distancias.items(), key=lambda x: x[1])
