@@ -4,14 +4,12 @@ from processamento import Processamento
 
 import random
 
-class Jogo:
+class Jogo: #classe responável por abstrair a lógica do processamento já feito e criar funções compatíveis com o jogo
 
     def __init__(self):
         inicio = time.time()
 
-        self.vocabulario, self.embeddings = Processamento.carregar_dados()
-
-        print("Carregamento:", time.time() - inicio, "segundos")
+        self.vocabulario, self.embeddings = Processamento.carregar_dados() #carrega os dados pré processados
 
         self.palavra_sorteada = None
         self.tentativas = []
@@ -19,44 +17,39 @@ class Jogo:
         self.ranking = []
 
     def iniciar_jogo(self):
-        inicio = time.time()
 
+        #sorteia a palavra
         self.palavra_sorteada = Processamento.sorteio_palavra(
             self.vocabulario
         )
 
-        print("Sorteio:", time.time() - inicio, "segundos")
-
         self.tentativas = []
         self.dicas = []
 
-        inicio = time.time()
-
+        #calcula as distâncias entre a palavra sorteada e todas as palavras do vocabulário
         distancias = Processamento.calculo_distancias(
             self.palavra_sorteada,
             self.vocabulario,
             self.embeddings
         )
 
-        print("Cálculo das distâncias:", time.time() - inicio, "segundos")
-
-        inicio = time.time()
-
+        #cria o ranking
         self.ranking = Processamento.criacao_ranking(distancias)
-
-        print("Criação do ranking:", time.time() - inicio, "segundos")
 
         return True
 
+    #função que recebe a tentativa de palavra
     def tentar_palavra(self, palavra):
-        palavra = palavra.lower().strip()
+        palavra = palavra.lower().strip() #normaliza
 
+        #verifica se ela está no vocabulário
         if palavra not in self.vocabulario:
             return {
                 "sucesso": False,
                 "mensagem": "Palavra não encontrada no vocabulário."
             }
 
+        #se a palavra está no vocabulário, retorna seu ranking com posição e distância da palavra alvo
         for posicao, (palavra_ranking, distancia) in enumerate(
             self.ranking, start=1
         ):
@@ -69,13 +62,14 @@ class Jogo:
                     "acertou": palavra == self.palavra_sorteada
                 }
 
-                self.tentativas.append(resultado)
+                self.tentativas.append(resultado) #adiciona nas tentativas
 
                 return resultado
 
-    def pedir_dica(self):
+    def pedir_dica(self): #função que retorna a dica: uma palavra dentre as 20 mais próximas da palavra alvo
         top_20 = self.ranking[:20]
 
+        #lista de palavras já usadas em dicas e tentativas
         palavras_usadas = (
             [tentativa["palavra"] for tentativa in self.tentativas]
             + [dica["palavra"] for dica in self.dicas]
@@ -94,10 +88,12 @@ class Jogo:
                 "mensagem": "Não há mais palavras disponíveis para dica."
             }
 
+        #sorteia a dica
         palavra, distancia = random.choice(palavras_disponiveis)
 
         posicao = self.ranking.index((palavra, distancia)) + 1
 
+        #retorna a dica com a palavra, posição e distância da palavra alvo
         resultado = {
             "sucesso": True,
             "palavra": palavra,
@@ -109,6 +105,7 @@ class Jogo:
 
         return resultado
 
+    #função de desistência que retorna a palavra alvo
     def desistir(self):
         return {
             "palavra_sorteada": self.palavra_sorteada,
