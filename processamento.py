@@ -12,10 +12,7 @@ import os
 
 class Processamento():
 
-    def fazer_dowloads(): # executar somente na primeira vez
-        nltk.download('punkt')
-        nltk.download('punkt_tab')
-        
+    #função que recebe o caminho do pdf do livro e retorna o texto
     def ler_pdf(caminho):
         leitor = PdfReader(caminho)
 
@@ -26,6 +23,7 @@ class Processamento():
 
         return texto
 
+    #função que recebe os tokens que remove os acentos deles (normalização - unicodedata)
     def remover_acentos(tokens):
         tokens_sem_acentos = []
 
@@ -41,12 +39,7 @@ class Processamento():
 
         return tokens_sem_acentos
 
-    def tokenizacao(caminho):
-        tokens = nltk.word_tokenize(caminho, language='portuguese')
-        tokens = [token.lower() for token in tokens]
-
-        return tokens
-
+    #função que recebe o texto do livro e faz a tokenização e lematização dos termos (stanza)
     def tokenizacao_lematizacao(texto):
         pln = stanza.Pipeline("pt")
         doc = pln(texto)
@@ -59,6 +52,7 @@ class Processamento():
 
         return lemas
 
+    #função que recebe o texto e remove as stopwords dele de acordo com a lista criada
     def remocao_stopwords(texto):
         lista_stopwords = [
             "a", "à", "ao", "aos", "as", "às",
@@ -113,6 +107,7 @@ class Processamento():
 
         return texto_filtrado
 
+    #função que recebe o texto e faz a filtragem pelas frequências mínima e máximas definidas, retornando um dicionário de palavras + frequências
     def contagem_filtragem_frequencia(texto):
         frequencia = dict(FreqDist(texto))
 
@@ -127,6 +122,7 @@ class Processamento():
 
         return vocabulario
 
+    #função que carrega o embedding baixado e retorna as palavras + vetores com os valores do embedding pré treinado
     def carregar_embedding():
 
         dados = load_file("embedding/embeddings.safetensors")
@@ -138,6 +134,7 @@ class Processamento():
 
         return palavras, vetores
 
+    #cria os embeddings das palavras do vocabulário do livro já filtradas
     def criar_embeddings(vocabulario):
 
         palavras, vetores = Processamento.carregar_embedding()
@@ -149,16 +146,19 @@ class Processamento():
 
         embeddings = {}
 
+        #filtra o novo embedding só com os vetores das palavras do vocabulário do livro
         for palavra in vocabulario:
             if palavra in indice:
                 embeddings[palavra] = vetores[indice[palavra]]
 
         return embeddings
 
+    #faz o sorteio da palavra alvo
     def sorteio_palavra(vocabulario):
         palavra = random.choice(list(vocabulario.keys()))
         return palavra
 
+    #calcula a distância entre duas palavras usando seus vetores de embedding
     def distancia_euclidiana(v1, v2):
         soma = 0
 
@@ -167,6 +167,7 @@ class Processamento():
 
         return math.sqrt(soma)
 
+    #calcula a distância entre a palavra sorteada e todas as outras palavras do vocabulário considerando seus vetores de embedding
     def calculo_distancias(palavra_sorteada, vocabulario, embeddings):
         indice_alvo = vocabulario[palavra_sorteada]["indice"]
         v_alvo = embeddings[indice_alvo]
@@ -184,11 +185,13 @@ class Processamento():
 
         return distancias
 
+    #cria o ranking ordenando as palavras pela menor distância em relação à palavra sorteada
     def criacao_ranking(distancias):
         ranking = sorted(distancias.items(), key=lambda x: x[1])
 
         return ranking
 
+    #função para salvar os dados de vocabulário e embeddings para o pré processamento
     def salvar_dados(vocabulario, embeddings):
         os.makedirs("dados", exist_ok=True)
 
@@ -215,6 +218,7 @@ class Processamento():
 
         np.save("dados/embeddings.npy", matriz_embeddings)
 
+    #função para carregar os dados de vocabulário e embeddings para o pré processamento
     def carregar_dados():
         with open("dados/vocabulario.json", "r", encoding="utf-8") as arquivo:
             vocabulario = json.load(arquivo)
