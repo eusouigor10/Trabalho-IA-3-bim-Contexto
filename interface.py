@@ -280,29 +280,56 @@ class ContextoAlienistaApp(ctk.CTk):
         for item in ordenados:
             pos = item["posicao"]
 
-            # Gradiente de cor por proximidade
+            # Cores ajustadas para manter contraste nítido com texto claro ou escuro
             if pos == 1:
-                cor_barra = "#27AE60"
+                cor_barra = "#196F3D"  # Verde escuro vitorioso
+                cor_texto = "#FFFFFF"
+                cor_num = "#A9DFBF"
             elif pos <= 10:
-                cor_barra = "#2ECC71"
+                cor_barra = "#1E8449"  # Verde equilibrado
+                cor_texto = "#FFFFFF"
+                cor_num = "#D5F5E3"
             elif pos <= 50:
-                cor_barra = "#F1C40F"
+                cor_barra = "#B7950B"  # Mostarda escuro (substitui o amarelo claro ofuscante)
+                cor_texto = "#FFFFFF"
+                cor_num = "#F9E79F"
             elif pos <= 200:
-                cor_barra = "#E67E22"
+                cor_barra = "#A04000"  # Laranja terroso/queimado
+                cor_texto = "#FFFFFF"
+                cor_num = "#EDBB99"
             else:
-                cor_barra = "#262626"
+                cor_barra = "#212121"  # Fundo neutro discreto
+                cor_texto = "#D5D5D5"
+                cor_num = "#85929E"
 
             row = ctk.CTkFrame(self.scroll_historico, fg_color=cor_barra, height=38, corner_radius=6)
             row.pack(fill="x", pady=2)
 
-            lbl_p = ctk.CTkLabel(row, text=f"#{pos}", font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), width=90)
+            lbl_p = ctk.CTkLabel(
+                row, 
+                text=f"#{pos}", 
+                font=ctk.CTkFont(family="Georgia", size=13, weight="bold"), 
+                text_color=cor_num, 
+                width=90
+            )
             lbl_p.pack(side="left", padx=10)
 
-            lbl_w = ctk.CTkLabel(row, text=item["palavra"], font=ctk.CTkFont(family="Georgia", size=14, weight="bold"))
+            lbl_w = ctk.CTkLabel(
+                row, 
+                text=item["palavra"], 
+                font=ctk.CTkFont(family="Georgia", size=14, weight="bold"), 
+                text_color=cor_texto
+            )
             lbl_w.pack(side="left", padx=15)
 
             dist_val = f"{item['distancia']:.4f}" if isinstance(item["distancia"], float) else str(item["distancia"])
-            lbl_s = ctk.CTkLabel(row, text=dist_val, font=ctk.CTkFont(family="Georgia", size=13), width=120)
+            lbl_s = ctk.CTkLabel(
+                row, 
+                text=dist_val, 
+                font=ctk.CTkFont(family="Georgia", size=13), 
+                text_color=cor_texto, 
+                width=120
+            )
             lbl_s.pack(side="right", padx=15)
 
     def carregar_tela_fim_jogo(self, motivo="desistencia", palavra_secreta="---", top_proximas=None):
