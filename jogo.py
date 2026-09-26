@@ -67,8 +67,8 @@ class Jogo: #classe responável por abstrair a lógica do processamento já feit
 
                 return resultado
 
-    def pedir_dica(self):  # função que retorna a próxima dica entre as 20 mais próximas
-        top_20 = self.ranking[:20]
+    def pedir_dica(self):  # função que retorna a próxima dica entre as 10 mais próximas
+        top_10 = self.ranking[:10]
 
         # lista de palavras já usadas em dicas e tentativas
         palavras_usadas = (
@@ -77,7 +77,7 @@ class Jogo: #classe responável por abstrair a lógica do processamento já feit
         )
 
         # procura a primeira palavra disponível na ordem do ranking
-        for palavra, distancia in top_20:
+        for palavra, distancia in reversed(top_10):
 
             if palavra == self.palavra_sorteada:
                 continue
