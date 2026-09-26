@@ -66,44 +66,41 @@ class Jogo: #classe responável por abstrair a lógica do processamento já feit
 
                 return resultado
 
-    def pedir_dica(self): #função que retorna a dica: uma palavra dentre as 20 mais próximas da palavra alvo
+    def pedir_dica(self):  # função que retorna a próxima dica entre as 20 mais próximas
         top_20 = self.ranking[:20]
 
-        #lista de palavras já usadas em dicas e tentativas
+        # lista de palavras já usadas em dicas e tentativas
         palavras_usadas = (
             [tentativa["palavra"] for tentativa in self.tentativas]
             + [dica["palavra"] for dica in self.dicas]
         )
 
-        palavras_disponiveis = [
-            item
-            for item in top_20
-            if item[0] != self.palavra_sorteada
-            and item[0] not in palavras_usadas
-        ]
+        # procura a primeira palavra disponível na ordem do ranking
+        for palavra, distancia in top_20:
 
-        if not palavras_disponiveis:
-            return {
-                "sucesso": False,
-                "mensagem": "Não há mais palavras disponíveis para dica."
+            if palavra == self.palavra_sorteada:
+                continue
+
+            if palavra in palavras_usadas:
+                continue
+
+            posicao = self.ranking.index((palavra, distancia)) + 1
+
+            resultado = {
+                "sucesso": True,
+                "palavra": palavra,
+                "posicao": posicao,
+                "distancia": distancia
             }
 
-        #sorteia a dica
-        palavra, distancia = random.choice(palavras_disponiveis)
+            self.dicas.append(resultado)
 
-        posicao = self.ranking.index((palavra, distancia)) + 1
+            return resultado
 
-        #retorna a dica com a palavra, posição e distância da palavra alvo
-        resultado = {
-            "sucesso": True,
-            "palavra": palavra,
-            "posicao": posicao,
-            "distancia": distancia
+        return {
+            "sucesso": False,
+            "mensagem": "Não há mais palavras disponíveis para dica."
         }
-
-        self.dicas.append(resultado)
-
-        return resultado
 
     #função de desistência que retorna a palavra alvo
     def desistir(self):
