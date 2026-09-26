@@ -34,7 +34,8 @@ class Jogo: #classe responável por abstrair a lógica do processamento já feit
         )
 
         #cria o ranking
-        self.ranking = Processamento.criacao_ranking(distancias)
+        ranking_bruto = Processamento.criacao_ranking(distancias)
+        self.ranking = [(p, float(d)) for p, d in ranking_bruto]
 
         return True
 
@@ -104,7 +105,12 @@ class Jogo: #classe responável por abstrair a lógica do processamento já feit
 
     #função de desistência que retorna a palavra alvo
     def desistir(self):
+        # Converte lista de tuplas para lista de dicts (serialização segura via XML-RPC)
+        top_ranking = [
+            {"posicao": i, "palavra": p, "similaridade": f"{d:.4f}"}
+            for i, (p, d) in enumerate(self.ranking[:100], start=1)
+        ]
         return {
-            "palavra_sorteada": self.palavra_sorteada,
-            "ranking": self.ranking
+            "palavra_sorteada": str(self.palavra_sorteada),
+            "top_ranking": top_ranking
         }
