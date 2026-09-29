@@ -67,41 +67,70 @@ class Jogo: #classe responável por abstrair a lógica do processamento já feit
 
                 return resultado
 
-    def pedir_dica(self):  # função que retorna a próxima dica entre as 10 mais próximas
-        top_10 = self.ranking[:10]
+    def pedir_dica(self):
 
-        # lista de palavras já usadas em dicas e tentativas
+        #faz uma lista de palavras já usadas em dicas ou palpites
         palavras_usadas = (
             [tentativa["palavra"] for tentativa in self.tentativas]
             + [dica["palavra"] for dica in self.dicas]
         )
 
-        # procura a primeira palavra disponível na ordem do ranking
-        for palavra, distancia in reversed(top_10):
+        #faz uma lista de palavras disponíveis para dica sem serem palavras usadas
+        palavras_disponiveis = [
+            item
+            for item in self.ranking
+            if item[0] != self.palavra_sorteada
+            and item[0] not in palavras_usadas
+        ]
 
-            if palavra == self.palavra_sorteada:
-                continue
-
-            if palavra in palavras_usadas:
-                continue
-
-            posicao = self.ranking.index((palavra, distancia)) + 1
-
-            resultado = {
-                "sucesso": True,
-                "palavra": palavra,
-                "posicao": posicao,
-                "distancia": distancia
+        if not palavras_disponiveis:
+            return {
+                "sucesso": False,
+                "mensagem": "Não há palavras disponíveis para dica."
             }
 
-            self.dicas.append(resultado)
+        #faz uma lista de palavras já usadas novamente
+        palavras_conhecidas = self.tentativas + self.dicas
 
-            return resultado
+        if not palavras_conhecidas:
+            palavra, distancia = random.choice(palavras_disponiveis) #sorteia uma dica dentre palavras não usadas caso seja a primeira dica sem tentativas
 
-        return {
-            "sucesso": False,
-            "mensagem": "Não há mais palavras disponíveis para dica."
+        else: 
+            #encontra a melhor palavra dentre as já usadas
+            melhor_palavra = min(
+                palavras_conhecidas,
+                key=lambda palavra: palavra["distancia"]
+            )
+
+            distancia_melhor_palavra = melhor_palavra["distancia"]
+
+            #as palavras disponíveis para dica são agora entre o alvo e a melhor palavra
+            palavras_disponiveis = [
+                item
+                for item in palavras_disponiveis
+                if item[1] < distancia_melhor_palavra
+            ]
+
+            if not palavras_disponiveis:
+                return {
+                    "sucesso": False,
+                    "mensagem": "Não há palavras disponíveis entre o melhor resultado e a palavra alvo."
+                }
+
+            palavra, distancia = random.choice(palavras_disponiveis) #sorteia a dica
+
+        posicao = self.ranking.index((palavra, distancia)) + 1
+
+        resultado = {
+            "sucesso": True,
+            "palavra": palavra,
+            "posicao": posicao,
+            "distancia": distancia
         }
+
+        self.dicas.append(resultado)
+
+        return resultado
 
     #função de desistência que retorna a palavra alvo
     def desistir(self):
